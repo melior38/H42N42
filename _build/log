@@ -1,0 +1,16 @@
+# dune exec H42N42
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/melior/.cache/dune/db
+# Workspace root: /home/melior/H42N42
+# Auto-detected concurrency: 4
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/melior/.opam/default/bin/ocamlc.opt -config > /tmp/dune_9ce2b4_output

@@ -1,0 +1,6 @@
+(executable
+ (public_name H42N42)
+ (name main)
+ (libraries H42N42
+  ocsigenserver
+  ocsigenserver.ext.staticmod))
