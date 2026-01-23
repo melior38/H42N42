@@ -36,9 +36,56 @@ let%shared () =
                       ~service:(Eliom_service.static_dir ())
                       ["css"; "h42n42.css"])
                  () ])
-          (body [h1 [txt "Welcome to Eliom!"]])))
-
-
+          (body 
+            [div ~a:[a_id "draw-zone"] []])))
 
 
           (* CLIENT CODE *)
+[%%client
+    open Js_of_ocaml
+
+    let resize_canvas canvas = 
+      let inner_w =  Dom_html.window##.innerWidth in
+      let inner_h =  Dom_html.window##.innerHeight in
+      let canvas_w = 
+        int_of_float (Float.floor (float inner_w /. 1.5)) 
+      in
+      let canvas_h = 
+        int_of_float (Float.floor (float inner_h /. 1.5))
+      in
+      canvas##.width := canvas_w;
+      canvas##.height := canvas_h;
+      
+      canvas##.style##.position := Js.string "absolute";
+      let left = (inner_w - canvas_w) / 2 in
+      let top = (inner_h - canvas_h) / 2 in
+
+      canvas##.style##.left := Js.string (string_of_int left ^ "px");
+      canvas##.style##.top := Js.string (string_of_int top ^ "px");
+      let ctx =
+        (canvas##getContext Dom_html._2d_)
+      in
+      ctx##.fillStyle:= Js.string "white";
+      ctx##fillRect 0. 0. (float_of_int canvas##.width) (float_of_int canvas##.height)
+
+    let () = 
+      Dom_html.window##.onload := Dom.handler (fun _ ->
+        let open Js_of_ocaml in
+        let doc = Dom_html.document in
+        match Dom_html.getElementById_opt "draw-zone" with
+        | None ->
+          let () = Firebug.console##log (Js.string "Div not found") in
+          Js._false
+        | Some div ->
+          let canvas = Dom_html.createCanvas doc in
+          resize_canvas canvas;
+          Dom.appendChild div canvas;
+
+          Dom_html.window##.onresize := Dom.handler (fun _ -> 
+            resize_canvas canvas;
+            Js._true
+          );
+
+          Js._true
+      )
+]

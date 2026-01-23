@@ -2,11 +2,16 @@
 //# buildInfo:effects=false, kind=cmo, use-js-string=true, version=5.9.1
 
 //# unitInfo: Provides: H42n42
-//# unitInfo: Requires: Eliom_client, Eliom_client_core, Eliom_content, Eliom_registration, Eliom_service, Lwt
+//# unitInfo: Requires: Eliom_client, Eliom_client_core, Eliom_content, Eliom_registration, Eliom_service, Js_of_ocaml__Dom, Js_of_ocaml__Dom_html, Js_of_ocaml__Firebug, Js_of_ocaml__Js, Lwt, Stdlib, Stdlib__Float
 (function
   (globalThis){
    "use strict";
-   var runtime = globalThis.jsoo_runtime, cst_h42n42_eliom = "h42n42.eliom";
+   var
+    runtime = globalThis.jsoo_runtime,
+    cst_draw_zone$1 = "draw-zone",
+    cst_h42n42_eliom = "h42n42.eliom",
+    cst_px$1 = "px",
+    caml_jsstring_of_string = runtime.caml_jsstring_of_string;
    function caml_call1(f, a0){
     return (f.l >= 0 ? f.l : f.l = f.length) === 1
             ? f(a0)
@@ -38,6 +43,11 @@
     global_data = runtime.caml_get_global_data(),
     eliom_compilation_unit_id_eZ0b = "eZ0bjX",
     global_data_path = [0, [0, "__global_data__", 0]],
+    Js_of_ocaml_Js = global_data.Js_of_ocaml__Js,
+    Js_of_ocaml_Dom_html = global_data.Js_of_ocaml__Dom_html,
+    Js_of_ocaml_Dom = global_data.Js_of_ocaml__Dom,
+    Js_of_ocaml_Firebug = global_data.Js_of_ocaml__Firebug,
+    Stdlib = global_data.Stdlib,
     Eliom_content = global_data.Eliom_content,
     Eliom_service = global_data.Eliom_service,
     Lwt = global_data.Lwt,
@@ -62,7 +72,7 @@
           [0, cst_h42n42_eliom, 24, 889, 917],
           [0, cst_h42n42_eliom, 24, 889, 917]]],
         "eZ0bjX1"),
-    cst_Welcome_to_Eliom = "Welcome to Eliom!",
+    cst_draw_zone = cst_draw_zone$1,
     _a_ = [0, "css", [0, "h42n42.css", 0]],
     cst_h42n42 = "h42n42";
    caml_call11
@@ -77,26 +87,91 @@
      0,
      main_service,
      0,
-     function(_b_, param){
+     function(_d_, param){
       var
-       _c_ =
-         [0, caml_call1(Eliom_content[3][1][222], cst_Welcome_to_Eliom), 0],
-       _d_ = [0, caml_call2(Eliom_content[3][1][233], 0, _c_), 0],
-       _e_ = caml_call2(Eliom_content[3][1][227], 0, _d_),
-       _f_ = caml_call1(Eliom_service[5], 0),
-       _g_ =
+       _e_ = [0, [0, caml_call1(Eliom_content[3][1][8], cst_draw_zone), 0]],
+       _f_ = [0, caml_call2(Eliom_content[3][1][248], _e_, 0), 0],
+       _g_ = caml_call2(Eliom_content[3][1][227], 0, _f_),
+       _h_ = caml_call1(Eliom_service[5], 0),
+       _i_ =
          caml_call10
-          (Eliom_content[3][1][349], 0, 0, 0, _f_, 0, 0, 0, 0, 0, _a_),
-       _h_ = [0, caml_call3(Eliom_content[3][1][351], 0, _g_, 0), 0],
-       _i_ = caml_call1(Eliom_content[3][1][222], cst_h42n42),
-       _j_ = caml_call2(Eliom_content[3][1][226], 0, _i_),
-       _k_ = caml_call3(Eliom_content[3][1][224], 0, _j_, _h_),
-       _l_ = caml_call3(Eliom_content[3][1][223], 0, _k_, _e_);
-      return caml_call1(Lwt[4], _l_);
+          (Eliom_content[3][1][349], 0, 0, 0, _h_, 0, 0, 0, 0, 0, _a_),
+       _j_ = [0, caml_call3(Eliom_content[3][1][351], 0, _i_, 0), 0],
+       _k_ = caml_call1(Eliom_content[3][1][222], cst_h42n42),
+       _l_ = caml_call2(Eliom_content[3][1][226], 0, _k_),
+       _m_ = caml_call3(Eliom_content[3][1][224], 0, _l_, _j_),
+       _n_ = caml_call3(Eliom_content[3][1][223], 0, _m_, _g_);
+      return caml_call1(Lwt[4], _n_);
      });
    caml_call1(Eliom_client_core[56][3], eliom_compilation_unit_id_eZ0b);
+   var
+    cst_px = cst_px$1,
+    cst_px$0 = cst_px$1,
+    cst_draw_zone$0 = cst_draw_zone$1,
+    dummy = 0;
+   function resize_canvas(canvas){
+    var
+     t0 = Js_of_ocaml_Dom_html[8],
+     inner_w = t0.innerWidth,
+     t1 = Js_of_ocaml_Dom_html[8],
+     inner_h = t1.innerHeight,
+     canvas_w = Math.floor(inner_w / 1.5) | 0,
+     canvas_h = Math.floor(inner_h / 1.5) | 0;
+    canvas.width = canvas_w;
+    canvas.height = canvas_h;
+    var t8 = canvas.style;
+    t8.position = "absolute";
+    var
+     left = (inner_w - canvas_w | 0) / 2 | 0,
+     top = (inner_h - canvas_h | 0) / 2 | 0,
+     _b_ = caml_call1(Stdlib[33], left),
+     t10 = caml_jsstring_of_string(caml_call2(Stdlib[28], _b_, cst_px)),
+     t11 = canvas.style;
+    t11.left = t10;
+    var
+     _c_ = caml_call1(Stdlib[33], top),
+     t13 = caml_jsstring_of_string(caml_call2(Stdlib[28], _c_, cst_px$0)),
+     t14 = canvas.style;
+    t14.top = t13;
+    var t15 = Js_of_ocaml_Dom_html[1], ctx = canvas.getContext(t15);
+    ctx.fillStyle = "white";
+    var t24 = canvas.height, t23 = canvas.width;
+    ctx.fillRect(0., 0., t23, t24);
+   }
+   var
+    t30 =
+      caml_call1
+       (Js_of_ocaml_Dom[10],
+        function(param){
+         var
+          doc = Js_of_ocaml_Dom_html[2],
+          match = caml_call1(Js_of_ocaml_Dom_html[3], cst_draw_zone$0);
+         if(match){
+          var
+           div = match[1],
+           canvas = caml_call1(Js_of_ocaml_Dom_html[111], doc);
+          resize_canvas(canvas);
+          caml_call2(Js_of_ocaml_Dom[5], div, canvas);
+          var
+           t28 =
+             caml_call1
+              (Js_of_ocaml_Dom[10],
+               function(param){
+                resize_canvas(canvas);
+                return Js_of_ocaml_Js[7];
+               }),
+           t29 = Js_of_ocaml_Dom_html[8];
+          t29.onresize = t28;
+          return Js_of_ocaml_Js[7];
+         }
+         var t27 = Js_of_ocaml_Firebug[1];
+         t27.log("Div not found");
+         return Js_of_ocaml_Js[8];
+        }),
+    t31 = Js_of_ocaml_Dom_html[8];
+   t31.onload = t30;
    var H42n42 = [0];
-   runtime.caml_register_global(14, H42n42, "H42n42");
+   runtime.caml_register_global(47, H42n42, "H42n42");
    return;
   }
   (globalThis));

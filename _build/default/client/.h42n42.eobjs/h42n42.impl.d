@@ -1,1 +1,1 @@
-client/h42n42.pp.ml: Eliom_client Eliom_client_core Eliom_content Eliom_registration Eliom_service Lexing Lwt
+client/h42n42.pp.ml: Dom Dom_html Eliom_client Eliom_client_core Eliom_content Eliom_registration Eliom_service Firebug Float Js Js_of_ocaml Lexing Lwt
