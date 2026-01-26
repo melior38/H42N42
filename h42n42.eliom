@@ -43,7 +43,50 @@ let%shared () =
           (* CLIENT CODE *)
 [%%client
     open Js_of_ocaml
+    open Js_of_ocaml_lwt
 
+
+    type data = {
+      mutable iteration: int;
+      windowCanvas: Dom_html.canvasElement Js.t;
+      refresh_rate: float;
+      radius: int;
+    }
+
+    let draw_nonocercle data x y =
+      let ctx =
+        (data.windowCanvas##getContext Dom_html._2d_)
+      in
+      ctx##clearRect 0. 0. (float_of_int data.windowCanvas##.width) (float_of_int data.windowCanvas##.height);
+      ctx##.fillStyle := Js.string "white";
+      ctx##fillRect 0. 0. (float_of_int data.windowCanvas##.width) (float_of_int data.windowCanvas##.height);
+      ctx##beginPath;
+      ctx##arc y x (float_of_int data.radius) 0. (Float.pi*.2.) Js._false;
+      ctx##.fillStyle := Js.string "red";
+      ctx##fill;
+      ctx##.lineWidth := 2.;
+      ctx##.strokeStyle := Js.string "#00FF00";
+      ctx##stroke
+
+
+    let move_nonocercle data =
+      let y = 
+        data.radius + ((data.iteration) mod (data.windowCanvas##.width - (2 * data.radius)))
+      in
+      draw_nonocercle data (float_of_int (data.windowCanvas##.height / 2)) (float_of_int y)
+      
+
+    let rec game_iteration (data: data) : unit Lwt.t =
+      let%lwt () = Lwt_js.sleep data.refresh_rate in
+      
+      if data.iteration >= 100000 then
+        Lwt.return()
+      else begin
+        move_nonocercle data;
+        data.iteration <- data.iteration+1;
+        game_iteration data
+      end
+      
     let resize_canvas canvas = 
       let inner_w =  Dom_html.window##.innerWidth in
       let inner_h =  Dom_html.window##.innerHeight in
@@ -65,7 +108,7 @@ let%shared () =
       let ctx =
         (canvas##getContext Dom_html._2d_)
       in
-      ctx##.fillStyle:= Js.string "white";
+      ctx##.fillStyle := Js.string "white";
       ctx##fillRect 0. 0. (float_of_int canvas##.width) (float_of_int canvas##.height)
 
     let () = 
@@ -85,6 +128,15 @@ let%shared () =
             resize_canvas canvas;
             Js._true
           );
+
+          let data = {
+            iteration = 0;
+            windowCanvas = canvas;
+            refresh_rate = 0.016;
+            radius = 30;
+          } in
+
+          let () = Lwt.async (fun () -> game_iteration data) in
 
           Js._true
       )
