@@ -2,7 +2,7 @@
 //# buildInfo:effects=false, kind=cmo, use-js-string=true, version=5.9.1
 
 //# unitInfo: Provides: H42n42
-//# unitInfo: Requires: Eliom_client, Eliom_client_core, Eliom_content, Eliom_registration, Eliom_service, Js_of_ocaml__Dom, Js_of_ocaml__Dom_html, Js_of_ocaml__Firebug, Js_of_ocaml__Js, Js_of_ocaml_lwt__Lwt_js, Lwt, Stdlib, Stdlib__Float
+//# unitInfo: Requires: Eliom_client, Eliom_client_core, Eliom_content, Eliom_registration, Eliom_service, Js_of_ocaml__Dom, Js_of_ocaml__Dom_html, Js_of_ocaml__Firebug, Js_of_ocaml__Js, Js_of_ocaml_lwt__Lwt_js, Lwt, Stdlib, Stdlib__Float, Stdlib__Random
 (function
   (globalThis){
    "use strict";
@@ -52,8 +52,9 @@
     Js_of_ocaml_Dom_html = global_data.Js_of_ocaml__Dom_html,
     Js_of_ocaml_Dom = global_data.Js_of_ocaml__Dom,
     Js_of_ocaml_Firebug = global_data.Js_of_ocaml__Firebug,
-    Stdlib = global_data.Stdlib,
     Stdlib_Float = global_data.Stdlib__Float,
+    Stdlib = global_data.Stdlib,
+    Stdlib_Random = global_data.Stdlib__Random,
     Eliom_content = global_data.Eliom_content,
     Eliom_service = global_data.Eliom_service,
     Eliom_client = global_data.Eliom_client,
@@ -92,29 +93,40 @@
      0,
      main_service,
      0,
-     function(_e_, param){
+     function(_h_, param){
       var
-       _f_ = [0, [0, caml_call1(Eliom_content[3][1][8], cst_draw_zone), 0]],
-       _g_ = [0, caml_call2(Eliom_content[3][1][248], _f_, 0), 0],
-       _h_ = caml_call2(Eliom_content[3][1][227], 0, _g_),
-       _i_ = caml_call1(Eliom_service[5], 0),
-       _j_ =
+       _i_ = [0, [0, caml_call1(Eliom_content[3][1][8], cst_draw_zone), 0]],
+       _j_ = [0, caml_call2(Eliom_content[3][1][248], _i_, 0), 0],
+       _k_ = caml_call2(Eliom_content[3][1][227], 0, _j_),
+       _l_ = caml_call1(Eliom_service[5], 0),
+       _m_ =
          caml_call10
-          (Eliom_content[3][1][349], 0, 0, 0, _i_, 0, 0, 0, 0, 0, _a_),
-       _k_ = [0, caml_call3(Eliom_content[3][1][351], 0, _j_, 0), 0],
-       _l_ = caml_call1(Eliom_content[3][1][222], cst_h42n42),
-       _m_ = caml_call2(Eliom_content[3][1][226], 0, _l_),
-       _n_ = caml_call3(Eliom_content[3][1][224], 0, _m_, _k_),
-       _o_ = caml_call3(Eliom_content[3][1][223], 0, _n_, _h_);
-      return caml_call1(Lwt[4], _o_);
+          (Eliom_content[3][1][349], 0, 0, 0, _l_, 0, 0, 0, 0, 0, _a_),
+       _n_ = [0, caml_call3(Eliom_content[3][1][351], 0, _m_, 0), 0],
+       _o_ = caml_call1(Eliom_content[3][1][222], cst_h42n42),
+       _p_ = caml_call2(Eliom_content[3][1][226], 0, _o_),
+       _q_ = caml_call3(Eliom_content[3][1][224], 0, _p_, _n_),
+       _r_ = caml_call3(Eliom_content[3][1][223], 0, _q_, _k_);
+      return caml_call1(Lwt[4], _r_);
      });
    caml_call1(Eliom_client_core[56][3], eliom_compilation_unit_id_eZ0b);
    var
+    cst_blue = "blue",
+    cst_green = "green",
+    cst_red = "red",
+    cst_purple = "purple",
     cst_px = cst_px$1,
     cst_px$0 = cst_px$1,
-    cst_draw_zone$0 = cst_draw_zone$1,
-    dummy = 0;
-   function game_iteration(data){
+    cst_draw_zone$0 = cst_draw_zone$1;
+   function generateRandomDirection(param){
+    var a = caml_call1(Stdlib_Random[14], 2. * Stdlib_Float[11]);
+    return [0, Math.cos(a), Math.sin(a)];
+   }
+   function clamp(v, min, max){
+    var _g_ = caml_call2(Stdlib_Float[23], max, v);
+    return caml_call2(Stdlib_Float[24], min, _g_);
+   }
+   function gameIteration(data){
     var ppx_lwt_0 = caml_call1(Js_of_ocaml_lwt_Lwt_js[1], data[3]);
     return caml_call3
             (Lwt[81],
@@ -124,75 +136,111 @@
              },
              ppx_lwt_0,
              function(param){
-              if(100000 <= data[1]) return caml_call1(Lwt[4], 0);
+              if(! data[1]) return caml_call1(Lwt[4], 0);
               var
-               t34 = data[2],
-               _d_ =
-                 runtime.caml_mod(data[1], t34.width - (2 * data[4] | 0) | 0),
-               t19 = data[4] + _d_ | 0,
-               t35 = data[2],
-               t20 = t35.height / 2 | 0,
-               t0 = Js_of_ocaml_Dom_html[1],
-               t1 = data[2],
-               ctx = t1.getContext(t0),
-               t3 = data[2],
-               t7 = t3.height,
-               t2 = data[2],
-               t6 = t2.width;
-              ctx.clearRect(0., 0., t6, t7);
+               circle = data[4],
+               t12 = Js_of_ocaml_Dom_html[1],
+               t13 = data[2],
+               ctx = t13.getContext(t12),
+               t14 = data[2],
+               wHeight = t14.height,
+               t15 = data[2],
+               wWidth = t15.width;
+              ctx.clearRect(0., 0., wWidth, wHeight);
               ctx.fillStyle = cst_white;
+              ctx.fillRect(0., 0., wWidth, wHeight);
+              if(caml_call1(Stdlib_Random[14], 1.) < 0.005)
+               circle[3] = generateRandomDirection(0);
               var
-               t12 = data[2],
-               t16 = t12.height,
-               t11 = data[2],
-               t15 = t11.width;
-              ctx.fillRect(0., 0., t15, t16);
+               match$2 = circle[2],
+               y$1 = match$2[2],
+               x$1 = match$2[1],
+               match$3 = circle[3],
+               dy$1 = match$3[2],
+               dx$1 = match$3[1];
+              circle[2] = [0, x$1 + dx$1 * circle[4], y$1 + dy$1 * circle[4]];
+              var
+               match$0 = circle[2],
+               y$0 = match$0[2],
+               x$0 = match$0[1],
+               match$1 = circle[3],
+               dy = match$1[2],
+               dx = match$1[1],
+               r$0 = circle[6] * data[5];
+              a:
+              {
+               if(! (x$0 - r$0 <= 0.) && ! (wWidth <= x$0 + r$0)){var dx$0 = dx; break a;}
+               var dx$0 = - dx;
+              }
+              a:
+              {
+               if(! (y$0 - r$0 <= 0.) && ! (wHeight <= y$0 + r$0)){var dy$0 = dy; break a;}
+               var dy$0 = - dy;
+              }
+              circle[3] = [0, dx$0, dy$0];
+              var
+               match = circle[2],
+               y = match[2],
+               x = match[1],
+               r = circle[6] * data[5],
+               _e_ = clamp(y, r, wHeight - r);
+              circle[2] = [0, clamp(x, r, wWidth - r), _e_];
+              var match$4 = circle[2], t2 = match$4[2], t1 = match$4[1];
               ctx.beginPath();
               var
-               t24 = Js_of_ocaml_Js[8],
-               t23 = Stdlib_Float[11] * 2.,
-               t21 = data[4];
-              ctx.arc(t19, t20, t21, 0., t23, t24);
-              ctx.fillStyle = "red";
+               t6 = Js_of_ocaml_Js[8],
+               t5 = Stdlib_Float[11] * 2.,
+               t3 = circle[6] * data[5];
+              ctx.arc(t1, t2, t3, 0., t5, t6);
+              switch(circle[5]){
+                case 0:
+                 var _f_ = cst_blue; break;
+                case 1:
+                 var _f_ = cst_green; break;
+                case 2:
+                 var _f_ = cst_red; break;
+                default: var _f_ = cst_purple;
+              }
+              var t8 = caml_jsstring_of_string(_f_);
+              ctx.fillStyle = t8;
               ctx.fill();
-              ctx.lineWidth = 2.;
-              ctx.strokeStyle = "#00FF00";
               ctx.stroke();
-              data[1] = data[1] + 1 | 0;
-              return game_iteration(data);
+              return gameIteration(data);
              });
    }
-   function resize_canvas(canvas){
+   function resizeCanvas(canvas){
     var
-     t36 = Js_of_ocaml_Dom_html[8],
-     inner_w = t36.innerWidth,
-     t37 = Js_of_ocaml_Dom_html[8],
-     inner_h = t37.innerHeight,
-     canvas_w = Math.floor(inner_w / 1.5) | 0,
-     canvas_h = Math.floor(inner_h / 1.5) | 0;
-    canvas.width = canvas_w;
-    canvas.height = canvas_h;
-    var t44 = canvas.style;
-    t44.position = "absolute";
+     t28 = Js_of_ocaml_Dom_html[8],
+     inner_w = t28.innerWidth,
+     t29 = Js_of_ocaml_Dom_html[8],
+     inner_h = t29.innerHeight,
+     scale = caml_call2(Stdlib_Float[23], inner_w / 1920., inner_h / 1080.),
+     t30 = 1920. * scale * 0.8 | 0;
+    canvas.width = t30;
+    var t32 = 1080. * scale * 0.8 | 0;
+    canvas.height = t32;
+    var t36 = canvas.style;
+    t36.position = "absolute";
     var
-     left = (inner_w - canvas_w | 0) / 2 | 0,
-     top = (inner_h - canvas_h | 0) / 2 | 0,
-     _b_ = caml_call1(Stdlib[33], left),
-     t46 = caml_jsstring_of_string(caml_call2(Stdlib[28], _b_, cst_px)),
-     t47 = canvas.style;
-    t47.left = t46;
+     left = ((inner_w | 0) - canvas.width | 0) / 2 | 0,
+     top = ((inner_h | 0) - canvas.height | 0) / 2 | 0,
+     _c_ = caml_call1(Stdlib[33], left),
+     t40 = caml_jsstring_of_string(caml_call2(Stdlib[28], _c_, cst_px)),
+     t41 = canvas.style;
+    t41.left = t40;
     var
-     _c_ = caml_call1(Stdlib[33], top),
-     t49 = caml_jsstring_of_string(caml_call2(Stdlib[28], _c_, cst_px$0)),
-     t50 = canvas.style;
-    t50.top = t49;
-    var t51 = Js_of_ocaml_Dom_html[1], ctx = canvas.getContext(t51);
+     _d_ = caml_call1(Stdlib[33], top),
+     t43 = caml_jsstring_of_string(caml_call2(Stdlib[28], _d_, cst_px$0)),
+     t44 = canvas.style;
+    t44.top = t43;
+    var t45 = Js_of_ocaml_Dom_html[1], ctx = canvas.getContext(t45);
     ctx.fillStyle = cst_white;
-    var t60 = canvas.height, t59 = canvas.width;
-    ctx.fillRect(0., 0., t59, t60);
+    var t54 = canvas.height, t53 = canvas.width;
+    ctx.fillRect(0., 0., t53, t54);
+    return scale;
    }
    var
-    t66 =
+    t62 =
       caml_call1
        (Js_of_ocaml_Dom[10],
         function(param){
@@ -202,31 +250,33 @@
          if(match){
           var
            div = match[1],
-           canvas = caml_call1(Js_of_ocaml_Dom_html[111], doc);
-          resize_canvas(canvas);
+           canvas = caml_call1(Js_of_ocaml_Dom_html[111], doc),
+           baseScale = resizeCanvas(canvas);
           caml_call2(Js_of_ocaml_Dom[5], div, canvas);
           var
-           t64 =
+           _b_ = generateRandomDirection(0),
+           circle = [0, 0, [0, canvas.width, canvas.height], _b_, 20., 0, 15.],
+           data = [0, 1, canvas, 0.016, circle, baseScale],
+           t60 =
              caml_call1
               (Js_of_ocaml_Dom[10],
                function(param){
-                resize_canvas(canvas);
+                data[5] = resizeCanvas(canvas);
                 return Js_of_ocaml_Js[7];
                }),
-           t65 = Js_of_ocaml_Dom_html[8];
-          t65.onresize = t64;
-          var data = [0, 0, canvas, 0.016, 30];
-          caml_call1(Lwt[11], function(param){return game_iteration(data);});
+           t61 = Js_of_ocaml_Dom_html[8];
+          t61.onresize = t60;
+          caml_call1(Lwt[11], function(param){return gameIteration(data);});
           return Js_of_ocaml_Js[7];
          }
-         var t63 = Js_of_ocaml_Firebug[1];
-         t63.log("Div not found");
+         var t57 = Js_of_ocaml_Firebug[1];
+         t57.log("Div not found");
          return Js_of_ocaml_Js[8];
         }),
-    t67 = Js_of_ocaml_Dom_html[8];
-   t67.onload = t66;
+    t63 = Js_of_ocaml_Dom_html[8];
+   t63.onload = t62;
    var H42n42 = [0];
-   runtime.caml_register_global(77, H42n42, "H42n42");
+   runtime.caml_register_global(86, H42n42, "H42n42");
    return;
   }
   (globalThis));
