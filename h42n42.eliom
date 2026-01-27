@@ -65,8 +65,9 @@ let%shared () =
       isRunning: bool;
       windowCanvas: Dom_html.canvasElement Js.t;
       refresh_rate: float;
-      creet: creet;
+      mutable creets: creet list;
       mutable scale: float;
+      canvaCtx: Dom_html.canvasRenderingContext2D Js.t;
     }
 
     let generateRandomDirection () : (float * float) = 
@@ -74,13 +75,13 @@ let%shared () =
       (cos a, sin a)
 
     let statusColor = function
-      | Healthy -> "blue"
+      | Healthy -> "cyan"
       | Sick -> "green"
       | Berserk -> "red"
       | Mean -> "purple"
 
     let probTurn crt = 
-      let probability = 0.005 in
+      let probability = 0.002 in
       if Random.float 1. < probability then
         crt.dir <- generateRandomDirection ()
     
@@ -116,26 +117,15 @@ let%shared () =
         y +. dy *. crt.speed
       )
 
-    let drawCircle circle ctx data =
+    let drawCircle circle data =
+      let ctx = data.canvaCtx in
       let x, y = circle.pos in
       ctx##beginPath;
       ctx##arc x y (circle.radius *. data.scale) 0. (Float.pi*. 2.) Js._false;
-      (* Firebug.console##log data.scale; *)
       ctx##.fillStyle := Js.string (statusColor circle.status);
-      ctx##fill;
-      ctx##stroke
+      ctx##fill
       
-
-    let handleCircle circle data =
-      let ctx =
-        (data.windowCanvas##getContext Dom_html._2d_)
-      in
-      let wHeight = float_of_int data.windowCanvas##.height in
-      let wWidth = float_of_int data.windowCanvas##.width in
-      ctx##clearRect 0. 0. wWidth wHeight;
-      ctx##.fillStyle := Js.string "white";
-      ctx##fillRect 0. 0. wWidth wHeight;
-
+    let handleCircle circle data wWidth wHeight =
       ignore circle.status;
       ignore circle.id;
       let _ = Mean in
@@ -145,7 +135,7 @@ let%shared () =
       moveCircle circle;
       rebound circle ~w:wWidth ~h:wHeight data;
       fix_pos circle ~w:wWidth ~h:wHeight data;
-      drawCircle circle ctx data
+      drawCircle circle data
 
     let rec gameIteration (data: data) : unit Lwt.t =
       let%lwt () = Lwt_js.sleep data.refresh_rate in
@@ -153,9 +143,25 @@ let%shared () =
       if not data.isRunning then
         Lwt.return()
       else begin
-        handleCircle data.creet data;
+        let wHeight = float_of_int data.windowCanvas##.height in
+        let wWidth = float_of_int data.windowCanvas##.width in
+        data.canvaCtx##clearRect 0. 0. wWidth wHeight;
+        List.iter (fun creet ->
+          handleCircle creet data wWidth wHeight;
+        ) data.creets;
         gameIteration data
       end
+
+    let generateCreet id speed base_radius canvas: creet=
+      let newCreet = {
+        id = id;
+        pos = ((float_of_int canvas##.width) /. 2., (float_of_int canvas##.height) /. 2.);
+        status = Healthy;
+        speed = speed;
+        dir = generateRandomDirection ();
+        radius = base_radius;
+      } in
+      newCreet
       
     let resizeCanvas canvas : float = 
       let inner_w = float_of_int Dom_html.window##.innerWidth in
@@ -163,18 +169,13 @@ let%shared () =
       let ref_h = 1080. in
       let ref_w = 1920. in
       let scale = Float.min (inner_w /. ref_w) (inner_h /. ref_h) in
-      canvas##.width := int_of_float ((ref_w *. scale) *. 0.8);
-      canvas##.height := int_of_float ((ref_h *. scale) *. 0.8);
+      canvas##.width := int_of_float ((ref_w *. scale));
+      canvas##.height := int_of_float ((ref_h *. scale));
       canvas##.style##.position := Js.string "absolute";
       let left = ((int_of_float inner_w) - canvas##.width) / 2 in
       let top = ((int_of_float inner_h) - canvas##.height) / 2 in
       canvas##.style##.left := Js.string (string_of_int left ^ "px");
       canvas##.style##.top := Js.string (string_of_int top ^ "px");
-      let ctx =
-        (canvas##getContext Dom_html._2d_)
-      in
-      ctx##.fillStyle := Js.string "white";
-      ctx##fillRect 0. 0. (float_of_int canvas##.width) (float_of_int canvas##.height);
       scale
 
     let () = 
@@ -187,24 +188,24 @@ let%shared () =
           Js._false
         | Some div ->
           let canvas = Dom_html.createCanvas doc in
+          canvas##.id := Js.string "canvas";
           let baseScale = resizeCanvas canvas in
           Dom.appendChild div canvas;
+          let ctx =
+            (canvas##getContext Dom_html._2d_)
+          in
 
-          let circle: creet = {
-            id = 0;
-            pos = (float_of_int canvas##.width, float_of_int canvas##.height);
-            status = Healthy;
-            speed = 20.;
-            dir = generateRandomDirection ();
-            radius = 15.;
-          } in
           let data: data = {
             isRunning = true;
             windowCanvas = canvas;
             refresh_rate = 0.016;
-            creet = circle;
+            creets = [];
             scale = baseScale;
+            canvaCtx = ctx;
           } in
+
+          data.creets <- (generateCreet 0 4. 20. canvas) :: data.creets;
+          data.creets <- (generateCreet 1 4. 20. canvas) :: data.creets;
 
           Dom_html.window##.onresize := Dom.handler (fun _ -> 
             data.scale <- resizeCanvas canvas;

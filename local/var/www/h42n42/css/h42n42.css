@@ -10,7 +10,7 @@ html, body {
     background-color: black;
 }
 
-/* #canvas {
-    background-image: url('/css/background.jpeg');
+#canvas {
+    background-image: url("/css/background.jpeg");
     background-size: cover;
-} */
+}
