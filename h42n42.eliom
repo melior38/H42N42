@@ -100,6 +100,7 @@ let%shared () =
       creetLimit: int;
       mutable gameId: int;
       mutable grabToken: int;
+      mutable gameDateTime: Js.date Js.t;
     }
 
     let generateRandomDirection () : (float * float) = 
@@ -195,8 +196,8 @@ let%shared () =
         | None ->
           let dx, dy = crt.dir in
           crt.pos <- (
-            x +. dx *. crt.speed,
-            y +. dy *. crt.speed
+            x +. dx *. (crt.speed *. 0.85),
+            y +. dy *. (crt.speed *. 0.85)
           )
         | Some target ->
           let dx, dy = dirToward crt.pos target.pos in
@@ -206,12 +207,18 @@ let%shared () =
             y +. dy *. crt.speed
           )
         end;
-      | _ ->
+      | Healthy ->
         let dx, dy = crt.dir in
         crt.pos <- (
           x +. dx *. crt.speed,
           y +. dy *. crt.speed
         )
+      | _ ->
+        let dx, dy = crt.dir in
+          crt.pos <- (
+            x +. dx *. (crt.speed *. 0.85),
+            y +. dy *. (crt.speed *. 0.85)
+          )
 
     let drawCircle creet data =
       match data.sprites with
@@ -319,13 +326,36 @@ let%shared () =
       data.canvaCtx##drawImage_withSize sprite 0. 0. wWidth wHeight;
       Lwt.return ()
 
+    let elapsedSeconds data =
+      let now = new%js Js.date_now in
+      let ms = 
+        Js.to_float now##getTime
+        -. Js.to_float data.gameDateTime##getTime
+      in
+      int_of_float (ms /. 1000.)
+
+    let formatTime secs =
+      let m = secs / 60 in
+      let s = secs mod 60 in
+      Printf.sprintf "%02d:%02d" m s
+
+    let drawTimer ctx data w =
+      let elapsed = elapsedSeconds data in
+      let txt = "TIME " ^ formatTime elapsed in
+      ctx##.font := (Js.string (Printf.sprintf "%.0fpx 'Press Start 2P'" (16. *. data.scale)));
+      ctx##.fillStyle := Js.string "white";
+      ctx##fillText (Js.string txt) (w -. (200. *. data.scale)) (30. *. data.scale)
+
     let rec gameIteration (data: data) : unit Lwt.t =
       let%lwt () = Lwt_js.sleep data.refresh_rate in
       let wHeight = float_of_int data.windowCanvas##.height in
       let wWidth = float_of_int data.windowCanvas##.width in
       if not data.isRunning then begin
         match data.sprites with
-        | Some spr ->  updateFullCanvas data spr.gameOver
+        | Some spr -> 
+          let _ = updateFullCanvas data spr.gameOver in
+          drawTimer data.canvaCtx data wWidth;
+          Lwt.return ()
         | None -> Lwt.return ()
       end else begin
         data.baseSpeed <- data.baseSpeed *. 1.0001;
@@ -334,6 +364,9 @@ let%shared () =
         List.iter (fun creet ->
           handleCircle creet data wWidth wHeight;
         ) data.creets;
+
+        drawTimer data.canvaCtx data wWidth;
+
         let toContaminate = ref [] in
 
         List.iter (fun creet ->
@@ -362,7 +395,7 @@ let%shared () =
             end;
         ) data.creets;
 
-        List.iter (contaminate data 0.1) !toContaminate;
+        List.iter (contaminate data 0.02) !toContaminate;
         
         data.isRunning <- (List.exists (fun c -> c.status = Healthy) data.creets);
         gameIteration data
@@ -462,7 +495,7 @@ let%shared () =
       let sickCreetP = loadImage "/css/sickCreet.png" in
       let meanCreetP = loadImage "/css/meanCreet.png" in
       let berserkCreetP = loadImage "/css/berserkCreet.png" in
-      let gameOverBackP = loadImage "/css/gameOver.png" in
+      let gameOverBackP = loadImage "/css/gameOver.jpg" in
       let menuBackP = loadImage "/css/menu.jpg" in
 
       let%lwt gameOverB = gameOverBackP
@@ -532,8 +565,11 @@ let%shared () =
     let restartGame data =
       data.isRunning <- true;
       data.grabbedCreetId <- -1;
+      data.gameDateTime <- new%js Js.date_now;
+      Firebug.console##log (Js.string ("" ^ (string_of_float data.gameDateTime##getTime)));
       data.grabbedCreetOffset <- (0., 0.);
       data.gameId <- data.gameId + 1;
+      data.baseSpeed <- 4. *. data.scale;
       generateDataInitalCreets data;
       rebuildGrid data;
       Lwt.async (fun () ->
@@ -588,6 +624,7 @@ let%shared () =
             creetLimit = 10;
             gameId = 0;
             grabToken = 0;
+            gameDateTime = new%js Js.date_now;
           } in
           
           generateDataInitalCreets data;
@@ -693,6 +730,15 @@ let%shared () =
                 tryLoadingSprites 
                 ~onReady:(fun sprites ->
                   updateFullCanvas data sprites.menu
+                )
+                data
+                0
+              )
+            end else if not data.isRunning && not data.isInMenu then begin
+              Lwt.async (fun () ->
+                tryLoadingSprites 
+                ~onReady:(fun sprites ->
+                  updateFullCanvas data sprites.gameOver
                 )
                 data
                 0

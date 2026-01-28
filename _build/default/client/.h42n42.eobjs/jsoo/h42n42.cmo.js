@@ -2,7 +2,7 @@
 //# buildInfo:effects=false, kind=cmo, use-js-string=true, version=5.9.1
 
 //# unitInfo: Provides: H42n42
-//# unitInfo: Requires: Eliom_client, Eliom_client_core, Eliom_content, Eliom_registration, Eliom_service, Js_of_ocaml__Dom, Js_of_ocaml__Dom_html, Js_of_ocaml__Firebug, Js_of_ocaml__Js, Js_of_ocaml_lwt__Lwt_js, Lwt, Stdlib, Stdlib__Float, Stdlib__Hashtbl, Stdlib__List, Stdlib__Random
+//# unitInfo: Requires: Eliom_client, Eliom_client_core, Eliom_content, Eliom_registration, Eliom_service, Js_of_ocaml__Dom, Js_of_ocaml__Dom_html, Js_of_ocaml__Firebug, Js_of_ocaml__Js, Js_of_ocaml_lwt__Lwt_js, Lwt, Stdlib, Stdlib__Float, Stdlib__Hashtbl, Stdlib__List, Stdlib__Printf, Stdlib__Random
 (function
   (globalThis){
    "use strict";
@@ -45,6 +45,7 @@
    var
     dummy = 0,
     global_data = runtime.caml_get_global_data(),
+    cst = "",
     eliom_compilation_unit_id_eZ0b = "eZ0bjX",
     global_data_path = [0, [0, "__global_data__", 0]],
     Stdlib_List = global_data.Stdlib__List,
@@ -57,6 +58,7 @@
     Js_of_ocaml_Dom_html = global_data.Js_of_ocaml__Dom_html,
     Js_of_ocaml_Dom = global_data.Js_of_ocaml__Dom,
     Stdlib_Float = global_data.Stdlib__Float,
+    Stdlib_Printf = global_data.Stdlib__Printf,
     Eliom_content = global_data.Eliom_content,
     Eliom_service = global_data.Eliom_service,
     Eliom_client = global_data.Eliom_client,
@@ -96,21 +98,21 @@
      0,
      main_service,
      0,
-     function(_ai_, param){
+     function(_as_, param){
       var
-       _aj_ = [0, [0, caml_call1(Eliom_content[3][1][8], cst_draw_zone), 0]],
-       _ak_ = [0, caml_call2(Eliom_content[3][1][248], _aj_, 0), 0],
-       _al_ = caml_call2(Eliom_content[3][1][227], 0, _ak_),
-       _am_ = caml_call1(Eliom_service[5], 0),
-       _an_ =
+       _at_ = [0, [0, caml_call1(Eliom_content[3][1][8], cst_draw_zone), 0]],
+       _au_ = [0, caml_call2(Eliom_content[3][1][248], _at_, 0), 0],
+       _av_ = caml_call2(Eliom_content[3][1][227], 0, _au_),
+       _aw_ = caml_call1(Eliom_service[5], 0),
+       _ax_ =
          caml_call10
-          (Eliom_content[3][1][349], 0, 0, 0, _am_, 0, 0, 0, 0, 0, _a_),
-       _ao_ = [0, caml_call3(Eliom_content[3][1][351], 0, _an_, 0), 0],
-       _ap_ = caml_call1(Eliom_content[3][1][222], cst_h42n42),
-       _aq_ = caml_call2(Eliom_content[3][1][226], 0, _ap_),
-       _ar_ = caml_call3(Eliom_content[3][1][224], 0, _aq_, _ao_),
-       _as_ = caml_call3(Eliom_content[3][1][223], 0, _ar_, _al_);
-      return caml_call1(Lwt[4], _as_);
+          (Eliom_content[3][1][349], 0, 0, 0, _aw_, 0, 0, 0, 0, 0, _a_),
+       _ay_ = [0, caml_call3(Eliom_content[3][1][351], 0, _ax_, 0), 0],
+       _az_ = caml_call1(Eliom_content[3][1][222], cst_h42n42),
+       _aA_ = caml_call2(Eliom_content[3][1][226], 0, _az_),
+       _aB_ = caml_call3(Eliom_content[3][1][224], 0, _aA_, _ay_),
+       _aC_ = caml_call3(Eliom_content[3][1][223], 0, _aB_, _av_);
+      return caml_call1(Lwt[4], _aC_);
      });
    caml_call1(Eliom_client_core[56][3], eliom_compilation_unit_id_eZ0b);
    var
@@ -123,6 +125,15 @@
     _d_ = [0, 0., 0.],
     _e_ = [0, 0., 0.],
     _f_ = [0, 0., 0.],
+    _g_ =
+      [0,
+       [4, 0, [0, 2, 2], 0, [12, 58, [4, 0, [0, 2, 2], 0, 0]]],
+       "%02d:%02d"],
+    cst_TIME = "TIME ",
+    _h_ =
+      [0,
+       [8, [0, 0, 0], 0, [0, 0], [11, "px 'Press Start 2P'", 0]],
+       "%.0fpx 'Press Start 2P'"],
     cst_px = cst_px$1,
     cst_px$0 = cst_px$1,
     cst_Failed_to_load_image = "Failed to load image: ",
@@ -130,20 +141,20 @@
     cst_css_sickCreet_png = "/css/sickCreet.png",
     cst_css_meanCreet_png = "/css/meanCreet.png",
     cst_css_berserkCreet_png = "/css/berserkCreet.png",
-    cst_css_gameOver_png = "/css/gameOver.png",
+    cst_css_gameOver_jpg = "/css/gameOver.jpg",
     cst_css_menu_jpg = "/css/menu.jpg",
     cst_Prev = "Prev : ",
-    _g_ = [0, 0., 0.],
+    _i_ = [0, 0., 0.],
     cst_draw_zone$0 = cst_draw_zone$1,
-    _h_ = [0, 0., 0.],
-    _i_ = [0, 0., 0.];
+    _j_ = [0, 0., 0.],
+    _k_ = [0, 0., 0.];
    function generateRandomDirection(param){
     var a = caml_call1(Stdlib_Random[14], 2. * Stdlib_Float[11]);
     return [0, Math.cos(a), Math.sin(a)];
    }
    function clamp(v, min, max){
-    var _ah_ = caml_call2(Stdlib_Float[23], max, v);
-    return caml_call2(Stdlib_Float[24], min, _ah_);
+    var _ar_ = caml_call2(Stdlib_Float[23], max, v);
+    return caml_call2(Stdlib_Float[24], min, _ar_);
    }
    function neighborCells(param){
     var cy = param[2], cx = param[1];
@@ -163,12 +174,12 @@
     var y = param[2], x = param[1];
     return [0, x / (data[9] * 2.) | 0, y / (data[9] * 2.) | 0];
    }
-   function creetDistance(_ag_, param){
+   function creetDistance(_aq_, param){
     var
      y2 = param[2],
      x2 = param[1],
-     y1 = _ag_[2],
-     x1 = _ag_[1],
+     y1 = _aq_[2],
+     x1 = _aq_[1],
      x = y2 - y1,
      x$0 = x2 - x1;
     return x$0 * x$0 + x * x;
@@ -193,22 +204,22 @@
     if(baseProbability < caml_call1(Stdlib_Random[14], 1.)) return 0;
     if(creet[5]) return 0;
     creet[5] = 1;
-    var _ad_ = caml_call1(Stdlib_Random[14], 1.) < 0.5 ? 1 : 0;
-    if(_ad_){
+    var _an_ = caml_call1(Stdlib_Random[14], 1.) < 0.5 ? 1 : 0;
+    if(_an_){
      if(caml_call1(Stdlib_Random[14], 1.) < 0.1){creet[5] = 2; return 0;}
      if(caml_call1(Stdlib_Random[14], 1.) < 0.1){creet[5] = 3; return 0;}
-     var _ae_ = caml_call1(Stdlib_Random[14], 1.) < 0.1 ? 1 : 0;
-     if(_ae_){
+     var _ao_ = caml_call1(Stdlib_Random[14], 1.) < 0.1 ? 1 : 0;
+     if(_ao_){
       if(caml_call1(Stdlib_Random[14], 1.) < 0.1){creet[5] = 3; return 0;}
       if(caml_call1(Stdlib_Random[14], 1.) < 0.1){creet[5] = 2; return 0;}
-      var _af_ = 0;
+      var _ap_ = 0;
      }
      else
-      var _af_ = _ae_;
+      var _ap_ = _ao_;
     }
     else
-     var _af_ = _ad_;
-    return _af_;
+     var _ap_ = _an_;
+    return _ap_;
    }
    function resetGrab(data){
     data[19] = data[19] + 1 | 0;
@@ -231,17 +242,17 @@
      h = wHeight * 0.25,
      w = wWidth * 0.5,
      x = wWidth * 0.25,
-     _$_ = x <= cx ? 1 : 0;
-    if(_$_){
-     var _aa_ = cx <= x + w ? 1 : 0;
-     if(_aa_)
-      var _ab_ = 0. <= cy ? 1 : 0, _ac_ = _ab_ ? cy <= 0. + h ? 1 : 0 : _ab_;
+     _aj_ = x <= cx ? 1 : 0;
+    if(_aj_){
+     var _ak_ = cx <= x + w ? 1 : 0;
+     if(_ak_)
+      var _al_ = 0. <= cy ? 1 : 0, _am_ = _al_ ? cy <= 0. + h ? 1 : 0 : _al_;
      else
-      var _ac_ = _aa_;
+      var _am_ = _ak_;
     }
     else
-     var _ac_ = _$_;
-    if(_ac_) crt[5] = 0;
+     var _am_ = _aj_;
+    if(_am_) crt[5] = 0;
     data[11] = -1;
     data[12] = _e_;
    }
@@ -257,6 +268,29 @@
     t21.drawImage(sprite, 0., 0., wWidth, wHeight);
     return caml_call1(Lwt[4], 0);
    }
+   function drawTimer(ctx, data, w){
+    var
+     t22 = Js_of_ocaml_Js[26],
+     now = new t22,
+     t24 = data[20],
+     _ah_ = t24.getTime(),
+     ms = now.getTime() - _ah_,
+     elapsed = ms / 1000. | 0,
+     m = elapsed / 60 | 0,
+     s = elapsed % 60 | 0,
+     _ai_ = caml_call3(Stdlib_Printf[4], _g_, m, s),
+     txt = caml_call2(Stdlib[28], cst_TIME, _ai_),
+     t25 =
+       caml_jsstring_of_string
+        (caml_call2(Stdlib_Printf[4], _h_, 16. * data[5]));
+    ctx.font = t25;
+    ctx.fillStyle = "white";
+    var
+     t31 = 30. * data[5],
+     t30 = w - 200. * data[5],
+     t29 = caml_jsstring_of_string(txt);
+    ctx.fillText(t29, t30, t31);
+   }
    function gameIteration(data){
     var ppx_lwt_0 = caml_call1(Js_of_ocaml_lwt_Lwt_js[1], data[3]);
     return caml_call3
@@ -268,15 +302,15 @@
              ppx_lwt_0,
              function(param){
               var
-               t22 = data[2],
-               wHeight = t22.height,
-               t23 = data[2],
-               wWidth = t23.width;
+               t33 = data[2],
+               wHeight = t33.height,
+               t34 = data[2],
+               wWidth = t34.width;
               if(data[1]){
                data[7] = data[7] * 1.0001;
                rebuildGrid(data);
-               var t28 = data[6];
-               t28.clearRect(0., 0., wWidth, wHeight);
+               var t39 = data[6];
+               t39.clearRect(0., 0., wWidth, wHeight);
                caml_call2
                 (Stdlib_List[18],
                  function(creet){
@@ -293,65 +327,82 @@
                     vx = match$6[1];
                    creet[2] = [0, mx + vx, my + vy];
                   }
-                  else if(3 <= creet[5]){
-                   var
-                    match$2 = cellFromPos(creet[2], data),
-                    cy = match$2[2],
-                    cx = match$2[1],
-                    _U_ = neighborCells([0, cx, cy]),
-                    _V_ = caml_call1(Grid[8], data[10]),
-                    _W_ = caml_call1(caml_call1(Stdlib_List[23], _V_), _U_),
-                    _X_ = caml_call1(Stdlib_List[14], _W_),
-                    _Y_ =
-                      caml_call1
-                       (caml_call1
-                         (Stdlib_List[44], function(c){return 0 === c[5] ? 1 : 0;}),
-                        _X_),
-                    match$3 =
-                      caml_call1
-                       (caml_call2
-                         (Stdlib_List[26],
-                          function(acc, other){
-                           if(! acc) return [0, other];
-                           var best = acc[1], ___ = creetDistance(creet[2], best[2]);
-                           return creetDistance(creet[2], other[2]) < ___
-                                   ? [0, other]
-                                   : acc;
-                          },
-                          0),
-                        _Y_);
-                   if(match$3){
-                    var
-                     target = match$3[1],
-                     param = target[2],
-                     _Z_ = creet[2],
-                     y2 = param[2],
-                     x2 = param[1],
-                     y1 = _Z_[2],
-                     x1 = _Z_[1],
-                     dx$1 = x2 - x1,
-                     dy$1 = y2 - y1,
-                     len = Math.sqrt(dx$1 * dx$1 + dy$1 * dy$1),
-                     match$7 = len === 0. ? _d_ : [0, dx$1 / len, dy$1 / len],
-                     dy$2 = match$7[2],
-                     dx$2 = match$7[1];
-                    creet[3] = [0, dx$2, dy$2];
-                    creet[2] = [0, x$1 + dx$2 * creet[4], y$1 + dy$2 * creet[4]];
-                   }
+                  else{
+                   var _ae_ = creet[5];
+                   if(_ae_)
+                    if(3 <= _ae_){
+                     var
+                      match$2 = cellFromPos(creet[2], data),
+                      cy = match$2[2],
+                      cx = match$2[1],
+                      _$_ = neighborCells([0, cx, cy]),
+                      _aa_ = caml_call1(Grid[8], data[10]),
+                      _ab_ = caml_call1(caml_call1(Stdlib_List[23], _aa_), _$_),
+                      _ac_ = caml_call1(Stdlib_List[14], _ab_),
+                      _ad_ =
+                        caml_call1
+                         (caml_call1
+                           (Stdlib_List[44], function(c){return 0 === c[5] ? 1 : 0;}),
+                          _ac_),
+                      match$3 =
+                        caml_call1
+                         (caml_call2
+                           (Stdlib_List[26],
+                            function(acc, other){
+                             if(! acc) return [0, other];
+                             var best = acc[1], _ag_ = creetDistance(creet[2], best[2]);
+                             return creetDistance(creet[2], other[2]) < _ag_
+                                     ? [0, other]
+                                     : acc;
+                            },
+                            0),
+                          _ad_);
+                     if(match$3){
+                      var
+                       target = match$3[1],
+                       param = target[2],
+                       _af_ = creet[2],
+                       y2 = param[2],
+                       x2 = param[1],
+                       y1 = _af_[2],
+                       x1 = _af_[1],
+                       dx$1 = x2 - x1,
+                       dy$1 = y2 - y1,
+                       len = Math.sqrt(dx$1 * dx$1 + dy$1 * dy$1),
+                       match$7 = len === 0. ? _d_ : [0, dx$1 / len, dy$1 / len],
+                       dy$2 = match$7[2],
+                       dx$2 = match$7[1];
+                      creet[3] = [0, dx$2, dy$2];
+                      creet[2] = [0, x$1 + dx$2 * creet[4], y$1 + dy$2 * creet[4]];
+                     }
+                     else{
+                      var
+                       match$8 = creet[3],
+                       dy$3 = match$8[2],
+                       dx$3 = match$8[1];
+                      creet[2] =
+                       [0,
+                        x$1 + dx$3 * (creet[4] * 0.85),
+                        y$1 + dy$3 * (creet[4] * 0.85)];
+                     }
+                    }
+                    else{
+                     var
+                      match$9 = creet[3],
+                      dy$4 = match$9[2],
+                      dx$4 = match$9[1];
+                     creet[2] =
+                      [0,
+                       x$1 + dx$4 * (creet[4] * 0.85),
+                       y$1 + dy$4 * (creet[4] * 0.85)];
+                    }
                    else{
                     var
-                     match$8 = creet[3],
-                     dy$3 = match$8[2],
-                     dx$3 = match$8[1];
-                    creet[2] = [0, x$1 + dx$3 * creet[4], y$1 + dy$3 * creet[4]];
+                     match$10 = creet[3],
+                     dy$5 = match$10[2],
+                     dx$5 = match$10[1];
+                    creet[2] = [0, x$1 + dx$5 * creet[4], y$1 + dy$5 * creet[4]];
                    }
-                  }
-                  else{
-                   var
-                    match$9 = creet[3],
-                    dy$4 = match$9[2],
-                    dx$4 = match$9[1];
-                   creet[2] = [0, x$1 + dx$4 * creet[4], y$1 + dy$4 * creet[4]];
                   }
                   var
                    match$0 = creet[2],
@@ -377,11 +428,11 @@
                    y = match[2],
                    x = match[1],
                    r = creet[6],
-                   _T_ = clamp(y, r, wHeight - r);
-                  creet[2] = [0, clamp(x, r, wWidth - r), _T_];
-                  var match$10 = data[14];
-                  if(! match$10) return 0;
-                  var sprites = match$10[1];
+                   ___ = clamp(y, r, wHeight - r);
+                  creet[2] = [0, clamp(x, r, wWidth - r), ___];
+                  var match$11 = data[14];
+                  if(! match$11) return 0;
+                  var sprites = match$11[1];
                   switch(creet[5]){
                     case 0:
                      var img = sprites[1]; break;
@@ -393,15 +444,16 @@
                   }
                   var
                    ctx = data[6],
-                   match$11 = creet[2],
-                   y$2 = match$11[2],
-                   x$2 = match$11[1],
+                   match$12 = creet[2],
+                   y$2 = match$12[2],
+                   x$2 = match$12[1],
                    size = creet[6] * 2.,
                    t2 = y$2 - creet[6],
                    t1 = x$2 - creet[6];
                   return ctx.drawImage(img, t1, t2, size, size);
                  },
                  data[4]);
+               drawTimer(data[6], data, wWidth);
                var toContaminate = [0, 0];
                caml_call2
                 (Stdlib_List[18],
@@ -414,17 +466,17 @@
                     match = cellFromPos(creet[2], data),
                     cy = match[2],
                     cx = match[1],
-                    _N_ = neighborCells([0, cx, cy]),
-                    _O_ = caml_call1(Grid[8], grid),
-                    _P_ = caml_call1(caml_call1(Stdlib_List[23], _O_), _N_),
-                    _Q_ = caml_call1(Stdlib_List[14], _P_),
+                    _U_ = neighborCells([0, cx, cy]),
+                    _V_ = caml_call1(Grid[8], grid),
+                    _W_ = caml_call1(caml_call1(Stdlib_List[23], _V_), _U_),
+                    _X_ = caml_call1(Stdlib_List[14], _W_),
                     overlap =
                       caml_call1
                        (caml_call1
                          (Stdlib_List[44],
                           function(other){
-                           var _S_ = other[1] !== creet[1] ? 1 : 0;
-                           if(! _S_) return _S_;
+                           var _Z_ = other[1] !== creet[1] ? 1 : 0;
+                           if(! _Z_) return _Z_;
                            var
                             match = creet[2],
                             y1 = match[2],
@@ -437,7 +489,7 @@
                             r = creet[6] + other[6];
                            return dx * dx + dy * dy <= r * r ? 1 : 0;
                           }),
-                        _Q_);
+                        _X_);
                    caml_call2
                     (Stdlib_List[18],
                      function(other){
@@ -466,14 +518,14 @@
                    creet[6] < data[8]
                     ? clamp(creet[6] + 0.005 * creet[6], creet[6], data[8])
                     : clamp(creet[6] - 0.005 * creet[6], data[8], data[9]);
-                  var _R_ = wHeight * 0.85 < cy$0 + creet[6] ? 1 : 0;
-                  return _R_ ? contaminate(data, 1., creet) : _R_;
+                  var _Y_ = wHeight * 0.85 < cy$0 + creet[6] ? 1 : 0;
+                  return _Y_ ? contaminate(data, 1., creet) : _Y_;
                  },
                  data[4]);
-               var _L_ = 0.1;
+               var _S_ = 0.02;
                caml_call2
                 (Stdlib_List[18],
-                 function(_M_){return contaminate(data, _L_, _M_);},
+                 function(_T_){return contaminate(data, _S_, _T_);},
                  toContaminate[1]);
                data[1] =
                 caml_call2
@@ -485,7 +537,9 @@
               var match = data[14];
               if(! match) return caml_call1(Lwt[4], 0);
               var spr = match[1];
-              return updateFullCanvas(data, spr[5]);
+              updateFullCanvas(data, spr[5]);
+              drawTimer(data[6], data, wWidth);
+              return caml_call1(Lwt[4], 0);
              });
    }
    function mousePositionOnCanvas(event, data){
@@ -498,12 +552,12 @@
    }
    function generateCreet(id, speed, base_radius, canvas){
     var
-     _K_ = generateRandomDirection(0),
+     _R_ = generateRandomDirection(0),
      newCreet =
        [0,
         id,
         [0, canvas.width / 2., canvas.height / 2.],
-        _K_,
+        _R_,
         speed,
         0,
         base_radius];
@@ -511,29 +565,29 @@
    }
    function updateCanvasSize(canvas){
     var
-     t36 = Js_of_ocaml_Dom_html[8],
-     inner_w = t36.innerWidth,
-     t37 = Js_of_ocaml_Dom_html[8],
-     inner_h = t37.innerHeight,
+     t47 = Js_of_ocaml_Dom_html[8],
+     inner_w = t47.innerWidth,
+     t48 = Js_of_ocaml_Dom_html[8],
+     inner_h = t48.innerHeight,
      scale = caml_call2(Stdlib_Float[23], inner_w / 1920., inner_h / 1080.),
-     t38 = 1920. * scale | 0;
-    canvas.width = t38;
-    var t40 = 1080. * scale | 0;
-    canvas.height = t40;
-    var t44 = canvas.style;
-    t44.position = "absolute";
+     t49 = 1920. * scale | 0;
+    canvas.width = t49;
+    var t51 = 1080. * scale | 0;
+    canvas.height = t51;
+    var t55 = canvas.style;
+    t55.position = "absolute";
     var
      left = ((inner_w | 0) - canvas.width | 0) / 2 | 0,
      top = ((inner_h | 0) - canvas.height | 0) / 2 | 0,
-     _I_ = caml_call1(Stdlib[33], left),
-     t48 = caml_jsstring_of_string(caml_call2(Stdlib[28], _I_, cst_px)),
-     t49 = canvas.style;
-    t49.left = t48;
+     _P_ = caml_call1(Stdlib[33], left),
+     t59 = caml_jsstring_of_string(caml_call2(Stdlib[28], _P_, cst_px)),
+     t60 = canvas.style;
+    t60.left = t59;
     var
-     _J_ = caml_call1(Stdlib[33], top),
-     t51 = caml_jsstring_of_string(caml_call2(Stdlib[28], _J_, cst_px$0)),
-     t52 = canvas.style;
-    t52.top = t51;
+     _Q_ = caml_call1(Stdlib[33], top),
+     t62 = caml_jsstring_of_string(caml_call2(Stdlib[28], _Q_, cst_px$0)),
+     t63 = canvas.style;
+    t63.top = t62;
     return scale;
    }
    function loadImage(src){
@@ -542,46 +596,46 @@
      match = caml_call1(Lwt[1], 0),
      wakener = match[2],
      promise = match[1],
-     t53 =
+     t64 =
        caml_call1
         (Js_of_ocaml_Dom[10],
          function(param){
           caml_call2(Lwt[52], wakener, img);
           return Js_of_ocaml_Js[8];
          });
-    img.onload = t53;
+    img.onload = t64;
     var
-     t55 =
+     t66 =
        caml_call1
         (Js_of_ocaml_Dom[10],
          function(param){
-          var _H_ = caml_call2(Stdlib[28], cst_Failed_to_load_image, src);
-          caml_call1(Lwt[44], _H_);
+          var _O_ = caml_call2(Stdlib[28], cst_Failed_to_load_image, src);
+          caml_call1(Lwt[44], _O_);
           return Js_of_ocaml_Js[8];
          });
-    img.onerror = t55;
-    var t57 = caml_jsstring_of_string(src);
-    img.src = t57;
+    img.onerror = t66;
+    var t68 = caml_jsstring_of_string(src);
+    img.src = t68;
     return promise;
    }
    function generateDataInitalCreets(data){
     var canvas = data[2];
     data[4] = 0;
-    var _C_ = data[4];
+    var _J_ = data[4];
     data[4] =
-     [0, generateCreet(0, 4. * data[5], data[8] * data[5], canvas), _C_];
-    var _D_ = data[4];
+     [0, generateCreet(0, 4. * data[5], data[8] * data[5], canvas), _J_];
+    var _K_ = data[4];
     data[4] =
-     [0, generateCreet(1, 4. * data[5], data[8] * data[5], canvas), _D_];
-    var _E_ = data[4];
+     [0, generateCreet(1, 4. * data[5], data[8] * data[5], canvas), _K_];
+    var _L_ = data[4];
     data[4] =
-     [0, generateCreet(2, 4. * data[5], data[8] * data[5], canvas), _E_];
-    var _F_ = data[4];
+     [0, generateCreet(2, 4. * data[5], data[8] * data[5], canvas), _L_];
+    var _M_ = data[4];
     data[4] =
-     [0, generateCreet(3, 4. * data[5], data[8] * data[5], canvas), _F_];
-    var _G_ = data[4];
+     [0, generateCreet(3, 4. * data[5], data[8] * data[5], canvas), _M_];
+    var _N_ = data[4];
     data[4] =
-     [0, generateCreet(4, 4. * data[5], data[8] * data[5], canvas), _G_];
+     [0, generateCreet(4, 4. * data[5], data[8] * data[5], canvas), _N_];
    }
    function tryLoadingSprites(onReady, data, iterations){
     if(3 < iterations) return Lwt[36];
@@ -592,7 +646,7 @@
      sickCreetP = loadImage(cst_css_sickCreet_png),
      meanCreetP = loadImage(cst_css_meanCreet_png),
      berserkCreetP = loadImage(cst_css_berserkCreet_png),
-     gameOverBackP = loadImage(cst_css_gameOver_png),
+     gameOverBackP = loadImage(cst_css_gameOver_jpg),
      menuBackP = loadImage(cst_css_menu_jpg),
      ppx_lwt_0 =
        caml_call3
@@ -683,16 +737,16 @@
     if(! creetOpt) return;
     var
      crt = creetOpt[1],
-     _w_ = data[4],
-     _x_ = crt[6],
-     _y_ = crt[5],
-     _z_ = crt[4],
-     _A_ = crt[3],
-     _B_ = crt[2];
+     _D_ = data[4],
+     _E_ = crt[6],
+     _F_ = crt[5],
+     _G_ = crt[4],
+     _H_ = crt[3],
+     _I_ = crt[2];
     data[4] =
      [0,
-      [0, caml_call1(Stdlib_List[1], data[4]), _B_, _A_, _z_, _y_, _x_],
-      _w_];
+      [0, caml_call1(Stdlib_List[1], data[4]), _I_, _H_, _G_, _F_, _E_],
+      _D_];
    }
    function reproduceCreet(data){
     var
@@ -707,8 +761,8 @@
              ppx_lwt_0,
              function(param){
               if(data[18] === prevId && data[1]){
-               var _u_ = data[17];
-               if(caml_call1(Stdlib_List[1], data[4]) < _u_){
+               var _B_ = data[17];
+               if(caml_call1(Stdlib_List[1], data[4]) < _B_){
                 var
                  healthyCreets =
                    caml_call2
@@ -720,12 +774,12 @@
                  duplicateCreet(data, healthyCreets, 0);
                 else{
                  var
-                  _v_ = caml_call1(Stdlib[33], creetQuantity),
-                  t66 =
+                  _C_ = caml_call1(Stdlib[33], creetQuantity),
+                  t77 =
                     caml_jsstring_of_string
-                     (caml_call2(Stdlib[28], cst_Prev, _v_)),
-                  t67 = Js_of_ocaml_Firebug[1];
-                 t67.log(t66);
+                     (caml_call2(Stdlib[28], cst_Prev, _C_)),
+                  t78 = Js_of_ocaml_Firebug[1];
+                 t78.log(t77);
                  duplicateCreet
                   (data,
                    healthyCreets,
@@ -740,8 +794,18 @@
    function restartGame(data){
     data[1] = 1;
     data[11] = -1;
-    data[12] = _g_;
+    var t79 = Js_of_ocaml_Js[26];
+    data[20] = new t79;
+    var
+     t80 = data[20],
+     _z_ = t80.getTime(),
+     _A_ = caml_call1(Stdlib[35], _z_),
+     t81 = caml_jsstring_of_string(caml_call2(Stdlib[28], cst, _A_)),
+     t82 = Js_of_ocaml_Firebug[1];
+    t82.log(t81);
+    data[12] = _i_;
     data[18] = data[18] + 1 | 0;
+    data[7] = 4. * data[5];
     generateDataInitalCreets(data);
     rebuildGrid(data);
     caml_call1(Lwt[11], function(param){return reproduceCreet(data);});
@@ -753,7 +817,7 @@
              });
    }
    var
-    t90 =
+    t106 =
       caml_call1
        (Js_of_ocaml_Dom[10],
         function(param){
@@ -769,9 +833,11 @@
           var baseScale = updateCanvasSize(canvas);
           caml_call2(Js_of_ocaml_Dom[5], div, canvas);
           var
-           t72 = Js_of_ocaml_Dom_html[1],
-           ctx = canvas.getContext(t72),
+           t87 = Js_of_ocaml_Dom_html[1],
+           ctx = canvas.getContext(t87),
            rad = 40. * baseScale,
+           t89 = Js_of_ocaml_Js[26],
+           _l_ = new t89,
            data =
              [0,
               0,
@@ -785,14 +851,15 @@
               rad * 4.,
               caml_call1(Grid[1], 1024),
               -1,
-              _i_,
-              _h_,
+              _k_,
+              _j_,
               0,
               1,
               0,
               10,
               0,
-              0];
+              0,
+              _l_];
           generateDataInitalCreets(data);
           rebuildGrid(data);
           caml_call1
@@ -806,11 +873,11 @@
                       0);
             });
           var
-           t78 =
+           t94 =
              caml_call1
               (Js_of_ocaml_Dom_html[10],
-               function(t74){
-                var match = caml_call1(Js_of_ocaml_Js[6][10], t74.key);
+               function(t90){
+                var match = caml_call1(Js_of_ocaml_Js[6][10], t90.key);
                 if(! match) return Js_of_ocaml_Js[7];
                 var
                  key = match[1],
@@ -820,13 +887,13 @@
                  if(key$0 !== "r" && key$0 !== "R"){
                   if(key$0 !== "p" && key$0 !== cst_P){
                    var
-                    _s_ = key$0 === "m" ? 1 : 0,
-                    _t_ = _s_ || (key$0 === cst_P ? 1 : 0);
-                   if(! _t_) break a;
+                    _x_ = key$0 === "m" ? 1 : 0,
+                    _y_ = _x_ || (key$0 === cst_P ? 1 : 0);
+                   if(! _y_) break a;
                    var match$0 = data[16];
                    if(match$0){
-                    var mus = match$0[1], t76 = ! ! (1 - (mus.muted | 0));
-                    mus.muted = t76;
+                    var mus = match$0[1], t92 = ! ! (1 - (mus.muted | 0));
+                    mus.muted = t92;
                    }
                    break a;
                   }
@@ -836,8 +903,8 @@
                      caml_call1
                       (Js_of_ocaml_Dom_html[108], Js_of_ocaml_Dom_html[2]);
                   audio.src = "/css/music.mp3";
-                  var t61 = Js_of_ocaml_Js[7];
-                  audio.loop = t61;
+                  var t72 = Js_of_ocaml_Js[7];
+                  audio.loop = t72;
                   audio.volume = 0.5;
                   audio.play();
                   data[16] = [0, audio];
@@ -845,15 +912,15 @@
                   restartGame(data);
                   break a;
                  }
-                 var _q_ = 1 - data[1], _r_ = _q_ ? 1 - data[15] : _q_;
-                 if(_r_) restartGame(data);
+                 var _v_ = 1 - data[1], _w_ = _v_ ? 1 - data[15] : _v_;
+                 if(_w_) restartGame(data);
                 }
                 return Js_of_ocaml_Js[7];
                }),
-           t79 = Js_of_ocaml_Dom_html[8];
-          t79.onkeydown = t78;
+           t95 = Js_of_ocaml_Dom_html[8];
+          t95.onkeydown = t94;
           var
-           t80 =
+           t96 =
              caml_call1
               (Js_of_ocaml_Dom_html[10],
                function(ev){
@@ -867,11 +934,11 @@
                  match = cellFromPos([0, mx, my], data),
                  cy = match[2],
                  cx = match[1],
-                 _j_ = neighborCells([0, cx, cy]),
-                 _k_ = caml_call1(Grid[8], grid),
-                 _l_ = caml_call1(caml_call1(Stdlib_List[23], _k_), _j_),
-                 _m_ = caml_call1(Stdlib_List[14], _l_),
-                 _n_ =
+                 _o_ = neighborCells([0, cx, cy]),
+                 _p_ = caml_call1(Grid[8], grid),
+                 _q_ = caml_call1(caml_call1(Stdlib_List[23], _p_), _o_),
+                 _r_ = caml_call1(Stdlib_List[14], _q_),
+                 _s_ =
                    caml_call1
                     (caml_call1
                       (Stdlib_List[44],
@@ -885,13 +952,13 @@
                          rad = creet[6] + 5. * data[5];
                         return dx * dx + dy * dy <= rad * rad ? 1 : 0;
                        }),
-                     _m_),
+                     _r_),
                  param =
                    caml_call1
                     (caml_call1
                       (Stdlib_List[59],
                        function(a, b){return runtime.caml_int_compare(b[1], a[1]);}),
-                     _n_);
+                     _s_);
                 if(param)
                  var x = param[1], match$0 = [0, x];
                 else
@@ -925,42 +992,42 @@
                             ppx_lwt_0,
                             function(param){
                              var
-                              _o_ = data[19] === tempToken ? 1 : 0,
-                              _p_ = _o_ ? data[11] === c[1] ? 1 : 0 : _o_;
-                             if(_p_) resetGrab(data);
+                              _t_ = data[19] === tempToken ? 1 : 0,
+                              _u_ = _t_ ? data[11] === c[1] ? 1 : 0 : _t_;
+                             if(_u_) resetGrab(data);
                              return Lwt[36];
                             });
                   });
                 return Js_of_ocaml_Js[7];
                }),
-           t81 = data[2];
-          t81.onmousedown = t80;
+           t97 = data[2];
+          t97.onmousedown = t96;
           var
-           t82 =
+           t98 =
              caml_call1
               (Js_of_ocaml_Dom_html[10],
                function(param){resetGrab(data); return Js_of_ocaml_Js[7];}),
-           t83 = data[2];
-          t83.onmouseup = t82;
+           t99 = data[2];
+          t99.onmouseup = t98;
           var
-           t84 =
+           t100 =
              caml_call1
               (Js_of_ocaml_Dom_html[10],
                function(param){resetGrab(data); return Js_of_ocaml_Js[7];}),
-           t85 = data[2];
-          t85.onmouseout = t84;
+           t101 = data[2];
+          t101.onmouseout = t100;
           var
-           t86 =
+           t102 =
              caml_call1
               (Js_of_ocaml_Dom_html[10],
                function(ev){
                 data[13] = mousePositionOnCanvas(ev, data);
                 return Js_of_ocaml_Js[7];
                }),
-           t87 = data[2];
-          t87.onmousemove = t86;
+           t103 = data[2];
+          t103.onmousemove = t102;
           var
-           t88 =
+           t104 =
              caml_call1
               (Js_of_ocaml_Dom[10],
                function(param){
@@ -991,20 +1058,34 @@
                              data,
                              0);
                    });
+                else{
+                 var _m_ = 1 - data[1], _n_ = _m_ ? 1 - data[15] : _m_;
+                 if(_n_)
+                  caml_call1
+                   (Lwt[11],
+                    function(param){
+                     return tryLoadingSprites
+                             (function(sprites){
+                               return updateFullCanvas(data, sprites[5]);
+                              },
+                              data,
+                              0);
+                    });
+                }
                 return Js_of_ocaml_Js[7];
                }),
-           t89 = Js_of_ocaml_Dom_html[8];
-          t89.onresize = t88;
+           t105 = Js_of_ocaml_Dom_html[8];
+          t105.onresize = t104;
           return Js_of_ocaml_Js[7];
          }
-         var t69 = Js_of_ocaml_Firebug[1];
-         t69.log("Div not found");
+         var t84 = Js_of_ocaml_Firebug[1];
+         t84.log("Div not found");
          return Js_of_ocaml_Js[8];
         }),
-    t91 = Js_of_ocaml_Dom_html[8];
-   t91.onload = t90;
+    t107 = Js_of_ocaml_Dom_html[8];
+   t107.onload = t106;
    var H42n42 = [0];
-   runtime.caml_register_global(165, H42n42, "H42n42");
+   runtime.caml_register_global(187, H42n42, "H42n42");
    return;
   }
   (globalThis));
