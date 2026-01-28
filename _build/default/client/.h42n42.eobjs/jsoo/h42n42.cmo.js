@@ -761,7 +761,7 @@
      _D_ = crt[6],
      _E_ = crt[5],
      _F_ = crt[4],
-     _G_ = crt[3],
+     _G_ = generateRandomDirection(0),
      _H_ = crt[2],
      newCreet =
        [0, caml_call1(Stdlib_List[1], data[4]), _H_, _G_, _F_, _E_, _D_];

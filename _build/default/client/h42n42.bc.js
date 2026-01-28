@@ -111634,7 +111634,7 @@ gE=[0,0,[0,a7],e7,0,1],gF=[0,es],gG=[0,0,[0,by],K,0,1],gH=[0,0,[0,e$],aP,0,1],gI
      _D_ = crt[6],
      _E_ = crt[5],
      _F_ = crt[4],
-     _G_ = crt[3],
+     _G_ = generateRandomDirection(0),
      _H_ = crt[2],
      newCreet =
        [0, caml_call1(Stdlib_List[1], data[4]), _H_, _G_, _F_, _E_, _D_];

@@ -559,7 +559,10 @@ let%shared () =
       match creetOpt with
       | None -> ()
       | Some crt ->
-        let newCreet = {crt with id = (List.length data.creets)} in
+        let newCreet = {crt with
+        id = (List.length data.creets);
+        dir = generateRandomDirection ();
+        } in
         data.creets <- newCreet :: data.creets;
         Lwt.async (fun () -> creetThread newCreet data)
 
