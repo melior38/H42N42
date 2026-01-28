@@ -70,32 +70,47 @@ let%shared () =
     module Grid = Hashtbl.Make(Cell)
 
     type grid = creet list Grid.t
+    
+    type images = {
+      healthyCreet: Dom_html.imageElement Js.t;
+      sickCreet: Dom_html.imageElement Js.t;
+      meanCreet : Dom_html.imageElement Js.t;
+      berserkCreet : Dom_html.imageElement Js.t;
+      gameOver : Dom_html.imageElement Js.t;
+      menu : Dom_html.imageElement Js.t;
+    }
 
     type data = {
-      isRunning: bool;
+      mutable isRunning: bool;
       windowCanvas: Dom_html.canvasElement Js.t;
       refresh_rate: float;
       mutable creets: creet list;
       mutable scale: float;
       canvaCtx: Dom_html.canvasRenderingContext2D Js.t;
-      baseSpeed: float;
-      baseRadius: float;
+      mutable baseSpeed: float;
+      mutable baseRadius: float;
       mutable maxRadius: float;
       mutable grid: grid;
       mutable grabbedCreetId: int;
       mutable grabbedCreetOffset: (float * float);
       mutable mousePos: (float * float);
+      mutable sprites : images option;
+      mutable isInMenu : bool;
+      mutable music : Dom_html.audioElement Js.t option;
+      creetLimit: int;
+      mutable gameId: int;
     }
 
     let generateRandomDirection () : (float * float) = 
       let a = Random.float (2. *. Float.pi) in
       (cos a, sin a)
 
-    let statusColor = function
-      | Healthy -> "cyan"
-      | Sick -> "green"
-      | Berserk -> "red"
-      | Mean -> "purple"
+    let spriteForCreet sprites creet =
+      match creet.status with
+      | Healthy -> sprites.healthyCreet
+      | Sick -> sprites.sickCreet
+      | Berserk -> sprites.berserkCreet
+      | Mean -> sprites.meanCreet
 
     let probTurn crt = 
       let probability = 0.002 in
@@ -142,25 +157,28 @@ let%shared () =
           y +. dy *. crt.speed
         )
 
-    let drawCircle circle data =
-      let ctx = data.canvaCtx in
-      let x, y = circle.pos in
-      ctx##beginPath;
-      ctx##arc x y circle.radius 0. (Float.pi*. 2.) Js._false;
-      ctx##.fillStyle := Js.string (statusColor circle.status);
-      ctx##fill
-      
-    let handleCircle circle data wWidth wHeight =
-      ignore circle.status;
-      ignore circle.id;
-      let _ = Mean in
-      let _ = Berserk in
-      let _ = Sick in
-      probTurn circle;
-      moveCircle circle data;
-      rebound circle ~w:wWidth ~h:wHeight;
-      fix_pos circle ~w:wWidth ~h:wHeight;
-      drawCircle circle data
+    let drawCircle creet data =
+      match data.sprites with
+      | None -> ()
+      | Some sprites ->
+        let img = spriteForCreet sprites creet in
+        let ctx = data.canvaCtx in
+        let x, y = creet.pos in
+        let size = creet.radius *. 2. in
+
+        ctx##drawImage_withSize
+          img
+          (x -. creet.radius)
+          (y -. creet.radius)
+          size
+          size
+        
+    let handleCircle creet data wWidth wHeight =
+      probTurn creet;
+      moveCircle creet data;
+      rebound creet ~w:wWidth ~h:wHeight;
+      fix_pos creet ~w:wWidth ~h:wHeight;
+      drawCircle creet data
 
     let cellFromPos (x, y) data =
       (int_of_float (x /. (data.maxRadius *. 2.)),
@@ -206,18 +224,23 @@ let%shared () =
 
     let handleContamination creet = 
       creet.status <- Sick;
-        if Random.float 1. < 0.5 then
-          if Random.float 1. < 0.1 then
-            creet.status <- Berserk
-          else ()
+      if Random.float 1. < 0.5 then
+        if Random.float 1. < 0.1 then
+          creet.status <- Berserk
         else if Random.float 1. < 0.1 then
           creet.status <- Mean
-        else ()
+      else if Random.float 1. < 0.1 then
+        if Random.float 1. < 0.1 then
+          creet.status <- Mean
+        else if Random.float 1. < 0.1 then
+          creet.status <- Berserk
+      else ()
 
     let contaminate data baseProbability creet =
+      if creet.id = data.grabbedCreetId then () else
       let _ , cy = creet.pos in
       if (cy -. creet.radius) < ((float_of_int data.windowCanvas##.height) *. 0.2) then () else
-      if Random.float 1. >= baseProbability then () else
+      if Random.float 1. > baseProbability then () else
       match creet.status with
       | Healthy ->
         handleContamination creet
@@ -226,41 +249,61 @@ let%shared () =
     let resetGrab data =
       data.grabbedCreetId <- -1;
       data.grabbedCreetOffset <- (0., 0.)
+      
+    let updateFullCanvas data sprite =
+      let wHeight = float_of_int data.windowCanvas##.height in
+      let wWidth = float_of_int data.windowCanvas##.width in
+      data.canvaCtx##clearRect 0. 0. wWidth wHeight;
+      data.canvaCtx##drawImage_withSize sprite 0. 0. wWidth wHeight;
+      Lwt.return ()
 
     let rec gameIteration (data: data) : unit Lwt.t =
       let%lwt () = Lwt_js.sleep data.refresh_rate in
-      
-      if not data.isRunning then
-        Lwt.return()
-      else begin
-        let wHeight = float_of_int data.windowCanvas##.height in
-        let wWidth = float_of_int data.windowCanvas##.width in
+      let wHeight = float_of_int data.windowCanvas##.height in
+      let wWidth = float_of_int data.windowCanvas##.width in
+      if not data.isRunning then begin
+        match data.sprites with
+        | Some spr ->  updateFullCanvas data spr.gameOver
+        | None -> Lwt.return ()
+      end else begin
         rebuildGrid data;
         data.canvaCtx##clearRect 0. 0. wWidth wHeight;
         List.iter (fun creet ->
           handleCircle creet data wWidth wHeight;
         ) data.creets;
-
         let toContaminate = ref [] in
 
         List.iter (fun creet ->
           let _ , cy = creet.pos in
           match creet.status with
-          | Healthy -> 
-            if (cy +. creet.radius) > (wHeight *. 0.8) then
+          | Healthy ->
+            if creet.radius < data.baseRadius then begin
+              creet.radius <- clamp (creet.radius +. (0.005 *. creet.radius)) creet.radius data.baseRadius;
+            end else begin
+              creet.radius <- clamp (creet.radius -. (0.005 *. creet.radius)) data.baseRadius data.maxRadius;
+            end;
+            if (cy +. creet.radius) > (wHeight *. 0.85) then
               contaminate data 1. creet
-          | _ ->
-            if (cy -. creet.radius) < (wHeight *. 0.2) then
+          | status ->
+            if (cy -. creet.radius) < (wHeight *. 0.15) then
               creet.status <- Healthy
             else
               let overlap = nearbyOverlaps data.grid creet data in
               List.iter (fun other -> 
                 toContaminate := other :: !toContaminate
-              ) overlap
+              ) overlap;
+              if status = Berserk then begin
+                creet.radius <- clamp (creet.radius +. (0.005 *. creet.radius)) data.baseRadius data.maxRadius
+              end else if status = Mean then begin
+                creet.radius <- clamp (creet.radius -. (0.005 *. creet.radius)) (data.baseRadius *. 0.85) data.maxRadius;
+              end else begin
+                creet.radius <- clamp (creet.radius -. (0.005 *. creet.radius)) data.baseRadius data.maxRadius;
+              end;
         ) data.creets;
 
         List.iter (contaminate data 0.1) !toContaminate;
-
+        
+        data.isRunning <- (List.exists (fun c -> c.status = Healthy) data.creets);
         gameIteration data
       end
 
@@ -276,20 +319,21 @@ let%shared () =
       (mx, my)
          
 
-    let containsPoint creet (mx, my) =
+    let containsPoint creet (mx, my) data=
       let x, y = creet.pos in
       let dx = mx -. x in
       let dy = my -. y in
-      (dx *. dx +. dy *. dy) <= (creet.radius *. creet.radius)
+      let rad = creet.radius +. (5. *. data.scale) in
+      (dx *. dx +. dy *. dy) <= (rad *. rad)
 
 
-    let clickedCreets grid (mx, my) data=
+    let clickedCreets grid (mx, my) data =
       let cx, cy = cellFromPos (mx, my) data in
       neighborCells (cx, cy)
       |> List.filter_map (Grid.find_opt grid)
       |> List.concat
       |> List.filter (fun c -> 
-          containsPoint c (mx, my)
+          containsPoint c (mx, my) data
         )
 
       let hd_opt = function
@@ -328,9 +372,126 @@ let%shared () =
       canvas##.style##.top := Js.string (string_of_int top ^ "px");
       scale
 
+    let loadImage src : Dom_html.imageElement Js.t Lwt.t =
+      let img = Dom_html.createImg Dom_html.document in
+      let promise, wakener = Lwt.wait () in
+
+      img##.onload := Dom.handler (fun _ -> 
+        Lwt.wakeup wakener img;
+        Js._false
+      );
+      img##.onerror := Dom.handler (fun _ ->
+        Lwt.fail_with ("Failed to load image: " ^ src)
+        |> ignore;
+        Js._false;
+      );
+      img##.src := Js.string src;
+      promise
+    
+    let playMusic src =
+      let audio = Dom_html.createAudio Dom_html.document in
+      audio##.src := Js.string src;
+      audio##.loop := Js._true;
+      audio##.volume := 0.5;
+      ignore (audio##play);
+      audio
+    
+    let loadSprites data : unit Lwt.t =
+      let healthyCreetP = loadImage "/css/healthyCreet.png" in
+      let sickCreetP = loadImage "/css/sickCreet.png" in
+      let meanCreetP = loadImage "/css/meanCreet.png" in
+      let berserkCreetP = loadImage "/css/berserkCreet.png" in
+      let gameOverBackP = loadImage "/css/gameOver.png" in
+      let menuBackP = loadImage "/css/menu.jpg" in
+
+      let%lwt gameOverB = gameOverBackP
+      and healthy = healthyCreetP
+      and sick = sickCreetP
+      and berserk = berserkCreetP
+      and mean = meanCreetP
+      and menuB = menuBackP in
+
+      data.sprites <- Some {
+        healthyCreet = healthy;
+        meanCreet = mean;
+        berserkCreet = berserk;
+        sickCreet = sick;
+        gameOver = gameOverB;
+        menu = menuB;
+      };
+
+      Lwt.return_unit
+
+    let generateDataInitalCreets data =
+      let canvas = data.windowCanvas in
+      data.creets <- [];
+      data.creets <- (generateCreet 0 (4. *. data.scale) (data.baseRadius *. data.scale) canvas) :: data.creets;
+      data.creets <- (generateCreet 1 (4. *. data.scale) (data.baseRadius *. data.scale) canvas) :: data.creets;
+      data.creets <- (generateCreet 2 (4. *. data.scale) (data.baseRadius *. data.scale) canvas) :: data.creets;
+      data.creets <- (generateCreet 3 (4. *. data.scale) (data.baseRadius *. data.scale) canvas) :: data.creets;
+      data.creets <- (generateCreet 4 (4. *. data.scale) (data.baseRadius *. data.scale) canvas) :: data.creets
+
+
+    let rec tryLoadingSprites ~(onReady: images -> unit Lwt.t) data iterations =
+    if iterations > 3 then
+      Lwt.return_unit
+    else 
+      match data.sprites with
+        | None ->
+          let%lwt () = loadSprites data in
+            tryLoadingSprites ~onReady data (iterations+1)
+        | Some sprites ->
+          onReady sprites
+
+      
+    let duplicateCreet data healthyCreets index =
+      let creetOpt = List.nth_opt healthyCreets index in
+      match creetOpt with
+      | None -> ()
+      | Some crt ->
+        data.creets <- {crt with id = (List.length data.creets)} :: data.creets
+
+    let rec reproduceCreet data =
+      let prevId = data.gameId in
+      Firebug.console##log (Js.string ("Prev : " ^ string_of_int data.gameId));
+      let%lwt () = Lwt_js.sleep 5. in
+      Firebug.console##log (Js.string ("NewId : " ^ string_of_int data.gameId));
+      if data.gameId = prevId && data.isRunning && (List.length data.creets) < data.creetLimit then begin
+        let healthyCreets = List.filter (fun creet -> creet.status = Healthy) data.creets in
+        let creetQuantity = List.length healthyCreets in
+        if creetQuantity = 1 then begin
+          duplicateCreet data healthyCreets 0
+        end else begin
+          Firebug.console##log (Js.string ("Prev : " ^ string_of_int creetQuantity));
+          duplicateCreet data healthyCreets (Random.int (creetQuantity-1))
+        end;
+        reproduceCreet data
+      end else begin
+      Lwt.return_unit
+      end
+
+    let restartGame data =
+      data.isRunning <- true;
+      data.grabbedCreetId <- -1;
+      data.grabbedCreetOffset <- (0., 0.);
+      data.gameId <- data.gameId + 1;
+      generateDataInitalCreets data;
+      rebuildGrid data;
+      Lwt.async (fun () ->
+        reproduceCreet data
+      );
+      Lwt.async (fun () ->
+        tryLoadingSprites
+        ~onReady:(fun _sprites ->
+          gameIteration data
+        )
+        data
+        0
+      )
 
     let () = 
       Dom_html.window##.onload := Dom.handler (fun _ ->
+        Random.self_init ();
         let open Js_of_ocaml in
         let doc = Dom_html.document in
         match Dom_html.getElementById_opt "draw-zone" with
@@ -346,52 +507,95 @@ let%shared () =
             (canvas##getContext Dom_html._2d_)
           in
 
+          let rad = 35. in
+
           let data: data = {
-            isRunning = true;
+            isRunning = false;
             windowCanvas = canvas;
             refresh_rate = 0.016;
             creets = [];
             scale = baseScale;
             canvaCtx = ctx;
             baseSpeed = 4.;
-            baseRadius = 30.;
-            maxRadius = 120.;
+            baseRadius = rad;
+            maxRadius = rad *. 4.;
             grid = (Grid.create 1024);
             grabbedCreetId = -1;
             grabbedCreetOffset = (0., 0.);
-            mousePos = (0., 0.)
+            mousePos = (0., 0.);
+            sprites = None;
+            isInMenu = true;
+            music = None;
+            creetLimit = 10;
+            gameId = 0;
           } in
-
-          data.creets <- (generateCreet 0 (4. *. data.scale) (data.baseRadius *. data.scale) canvas) :: data.creets;
-          data.creets <- (generateCreet 1 (4. *. data.scale) (data.baseRadius *. data.scale) canvas) :: data.creets;
-
+          
+          generateDataInitalCreets data;
           rebuildGrid data;
+          
+          Lwt.async (fun () ->
+            tryLoadingSprites 
+            ~onReady:(fun sprites ->
+              updateFullCanvas data sprites.menu
+            )
+            data
+            0
+          );
+          
+          Dom_html.window##.onkeydown :=
+            Dom_html.handler (fun ev -> 
+              match Js.Optdef.to_option ev##.key with
+              | Some key ->
+                let key = Js.to_string key in
+                if key = "r" || key = "R" then begin
+                  if not data.isRunning  && not data.isInMenu then
+                    restartGame data
+                end else if key = "p" || key = "P" then begin
+                  if data.isInMenu then begin
+                    data.music <- Some (playMusic "/css/music.mp3");
+                    data.isInMenu <- false;
+                    restartGame data
+                  end;
+                end else if key = "m" || key = "P" then begin
+                  match data.music with 
+                  | Some mus ->
+                    mus##.muted := Js.bool (not (Js.to_bool mus##.muted))
+                  | None -> ()
+                end;
+                Js._true
+              | None -> ()
+              ;
+              Js._true
+            );
 
           data.windowCanvas##.onmousedown :=
             Dom_html.handler (fun ev ->
+              if not data.isRunning then 
+                Js._true
+              else begin
               rebuildGrid data;
               let mousePos = mousePositionOnCanvas ev data in
               match creetAtTopmost data.grid (mousePos) data with
               | None -> 
-                Firebug.console##log (Js.string "No creet clicked !");
                 Js._true
               | Some c ->
-                  Firebug.console##log (Js.string ("Clicked on crit with id : " ^ (string_of_int c.id)));
                   data.grabbedCreetId <- c.id;
                   let mx, my = mousePos in
                   let cx, cy = c.pos in
                   data.grabbedCreetOffset <- (cx -. mx, cy -. my);
                   c.dir <- generateRandomDirection ();
                   Lwt.async (fun () ->
-                  let%lwt () = Lwt_js.sleep 3.0 in
-                    if data.grabbedCreetId = c.id then
-                      resetGrab data;
-                    Lwt.return_unit  
+                    let%lwt () = Lwt_js.sleep 3.0 in
+                      if data.grabbedCreetId = c.id then begin
+                        resetGrab data;
+                        Firebug.console##log (Js.string "Stopped Grab");
+                      end;
+                      Lwt.return_unit  
                   );
                 Js._true
+              end
             );
             
-
           data.windowCanvas##.onmouseup :=
             Dom_html.handler (fun _ ->
               resetGrab data;
@@ -401,26 +605,24 @@ let%shared () =
           data.windowCanvas##.onmousemove :=
             Dom_html.handler (fun ev ->
               data.mousePos <- mousePositionOnCanvas ev data;
-              (* Firebug.console##log data.mousePos; *)
               Js._true  
             );
 
-          Dom_html.window##.onresize := Dom.handler (fun _ -> 
+          Dom_html.window##.onresize := Dom.handler (fun _ ->
             let previousScale = data.scale in
+            let ratio = data.scale /. previousScale in
             data.scale <- updateCanvasSize canvas;
-            data.maxRadius <- data.maxRadius *. (data.scale /. previousScale);
+            data.baseRadius <- data.baseRadius *. (data.scale);
+            data.maxRadius <- data.baseRadius *. 4.;
+            data.baseSpeed <- data.baseSpeed *. data.scale;
             List.iter (fun creet -> 
-              creet.speed <- data.baseSpeed *. data.scale;
-              let ratio = data.scale /. previousScale in
+              creet.speed <- data.baseSpeed;
               let x,y = creet.pos in
-              Firebug.console##log ratio;
               creet.pos <- (x *. ratio, y *. ratio);
-              creet.radius <- (creet.radius *. ratio)
+              creet.radius <- creet.radius *. ratio;
             ) data.creets;
             Js._true
           );
-  
-          let () = Lwt.async (fun () -> gameIteration data) in
           Js._true
       )
 ]

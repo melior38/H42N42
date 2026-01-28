@@ -823,3 +823,882 @@ Jan 28 03:15:54: ocsigen:access: connection for localhost from 127.0.0.1 (Mozill
 Jan 28 03:15:54: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
 Jan 28 03:15:55: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
 Jan 28 03:15:55: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 11:19:44: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 11:19:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 11:19:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 11:19:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 11:19:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 11:22:44: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 11:22:44: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 11:22:44: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 11:22:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 11:22:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 11:23:18: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 11:23:18: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 11:23:18: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 11:23:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 11:23:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 11:27:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 11:27:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 11:27:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 11:27:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 11:27:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 11:29:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 11:29:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 11:29:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 11:29:43: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 11:29:43: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 12:58:44: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 12:58:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 12:58:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 12:58:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 12:58:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:04:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:04:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:04:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:04:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.jpeg
+Jan 28 13:04:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserCreet.jpeg
+Jan 28 13:04:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:04:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:04:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:04:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:04:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:04:25: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:04:25: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:04:25: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:04:26: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:04:26: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserCreet.jpeg
+Jan 28 13:04:26: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:04:26: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:04:26: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:04:26: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.jpeg
+Jan 28 13:04:26: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:04:39: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:04:39: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:04:39: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:04:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:04:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:04:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.jpeg
+Jan 28 13:04:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.jpeg
+Jan 28 13:04:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:04:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:04:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:08:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:09:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:09:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:09:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:09:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.jpeg
+Jan 28 13:09:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:09:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:09:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.jpeg
+Jan 28 13:09:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:09:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:09:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:09:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:09:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:09:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:09:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:09:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.jpeg
+Jan 28 13:09:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:09:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.jpeg
+Jan 28 13:09:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:11:55: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:11:55: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:11:55: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:11:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:11:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:11:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:11:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:11:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:11:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:11:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:12:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:12:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:12:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:12:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:12:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:12:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:12:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:12:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:12:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:13:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:14:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:14:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:14:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:14:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:14:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:14:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:14:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:14:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:14:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:14:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:14:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:14:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:14:24: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:14:24: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:14:24: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:14:24: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:14:24: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:14:24: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:15:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:15:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:15:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:15:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:15:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:15:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:15:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:15:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:15:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:15:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:33:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:33:48: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:33:48: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:33:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:33:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:33:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:33:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:33:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:33:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:33:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:35:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:35:48: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:35:48: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:35:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:35:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:35:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:35:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:35:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:35:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:35:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:36:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:36:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:36:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:36:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:36:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:36:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:36:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:36:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:36:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:36:58: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:36:58: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:36:58: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:37:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:37:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:37:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:37:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:37:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:37:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:37:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:44:39: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:44:39: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:44:39: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:44:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:44:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:44:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:44:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:44:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:44:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:44:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:46:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:46:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:46:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:46:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:46:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:46:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.jpg
+Jan 28 13:46:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.jpeg
+Jan 28 13:46:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:46:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:46:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:46:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:46:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:46:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:46:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:46:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 13:46:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 13:46:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:46:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:46:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 13:47:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:47:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:47:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:48:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:48:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:48:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.jpg
+Jan 28 13:48:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:48:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 13:48:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 13:52:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 13:52:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 13:52:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 13:52:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 13:52:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 13:52:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 13:52:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 13:52:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 13:52:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 13:52:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 14:42:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 14:42:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 14:42:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 14:42:37: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 14:42:37: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 14:42:37: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 14:42:37: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 14:42:37: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 14:42:37: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 14:42:37: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 14:42:38: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 14:44:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 14:44:48: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 14:44:48: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 14:44:49: ocsigen:access: connection for ajax.googleapis.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.localizeapi.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for d3e54v103j8qbb.cloudfront.net from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for hubspotonwebflow.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 14:44:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 14:44:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for ajax.googleapis.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 14:44:49: ocsigen:access: connection for cdn.localizeapi.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for d3e54v103j8qbb.cloudfront.net from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.discordapp.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.discordapp.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.discordapp.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.discordapp.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.discordapp.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:49: ocsigen:access: connection for cdn.discordapp.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for cdn.prod.website-files.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for discord.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for www.googletagmanager.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:50: ocsigen:access: connection for hubspotonwebflow.com from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): 
+Jan 28 14:44:52: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 14:45:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 14:45:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 14:45:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 14:45:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 14:45:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 14:45:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 14:45:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 14:45:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 14:45:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 14:45:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 14:45:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 14:45:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 14:45:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 14:45:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 14:45:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 14:45:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 14:45:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 14:45:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 14:45:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 14:45:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 14:45:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 14:45:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 14:47:18: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 14:47:18: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 14:47:18: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 14:47:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 14:47:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 14:47:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 14:47:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 14:47:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 14:47:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 14:47:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 14:47:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 14:47:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 14:52:38: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 14:52:39: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 14:52:39: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 14:52:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 14:52:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 14:52:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 14:52:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 14:52:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 14:52:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 14:52:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 14:52:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 14:53:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 14:54:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 14:54:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 14:54:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 14:54:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 14:54:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 14:54:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 14:54:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 14:54:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 14:54:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 14:54:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 14:54:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 15:09:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 15:09:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 15:09:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 15:09:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 15:09:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 15:09:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 15:09:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 15:09:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 15:09:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 15:09:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 15:09:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 15:09:24: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 15:13:06: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 15:13:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 15:13:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 15:13:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 15:13:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 15:13:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 15:13:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 15:13:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 15:13:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 15:13:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 15:13:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 15:13:13: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 15:13:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 15:41:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 15:41:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 15:41:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 15:41:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 15:41:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 15:41:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 15:41:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 15:41:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 15:41:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 15:41:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 15:41:36: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 15:41:38: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 15:46:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 15:46:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 15:46:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 15:46:06: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 15:46:06: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 15:46:06: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 15:46:06: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 15:46:06: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 15:46:06: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 15:46:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 15:46:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 15:46:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:01:43: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:01:44: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:01:44: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:01:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:01:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:01:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:01:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:01:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:01:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:01:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:01:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:01:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:02:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:02:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:02:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:02:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:02:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:02:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:02:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:02:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:02:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:02:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:02:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:02:37: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:03:06: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:03:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:03:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:03:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:03:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:03:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:03:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:03:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:03:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:03:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:03:09: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:03:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:03:31: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:03:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:03:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:03:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:03:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:03:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:03:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:03:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:03:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:03:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:03:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:03:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:04:39: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:04:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:04:40: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:04:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:04:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:04:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:04:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:04:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:04:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:04:41: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:04:42: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:04:43: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:06:18: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:06:19: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:06:19: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:06:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:06:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:06:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:06:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:06:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:06:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:06:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:06:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:06:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:10:19: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:10:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:10:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:10:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:10:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:10:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:10:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:10:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:10:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:10:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:10:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:10:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:11:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:11:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:11:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:11:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:11:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:11:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:11:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:11:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:11:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:11:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:11:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:11:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:14:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:15:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:15:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:15:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:15:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:15:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:15:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:15:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:15:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:15:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:15:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:15:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:16:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:17:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:17:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:17:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:17:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:17:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:17:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:17:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:17:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:17:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:17:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:17:05: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:20:51: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:20:52: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:20:52: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:20:53: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:20:53: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:20:53: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:20:53: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:20:53: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:20:53: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:20:53: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:20:54: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:20:55: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:22:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:22:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:22:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:22:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:22:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:22:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:22:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:22:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:22:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:22:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:22:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:22:05: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:23:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:23:50: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:23:50: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:23:52: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:23:52: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:23:52: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:23:52: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:23:52: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:23:52: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:23:52: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:23:52: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:23:54: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:24:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:24:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:24:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:24:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:24:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:24:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:24:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:24:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:24:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:24:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:25:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:25:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:25:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:25:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:25:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:25:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:25:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:25:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:25:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:25:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:25:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:26:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:26:05: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:26:43: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:26:44: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:26:44: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:26:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:26:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:26:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:26:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:26:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:26:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:26:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:26:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:26:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:28:29: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:28:30: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:28:30: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:28:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:28:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:28:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:28:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:28:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:28:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:28:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:28:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:28:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:28:43: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:30:05: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:30:06: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:30:06: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:30:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:30:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:30:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:30:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:30:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:30:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:30:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:30:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:30:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:30:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:30:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:30:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:30:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:30:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:30:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:30:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:30:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:30:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:30:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:30:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:31:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:31:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:31:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:31:16: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:31:16: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:31:16: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:31:16: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:31:16: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:31:16: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:31:17: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:31:17: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:31:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:31:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:31:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:31:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:31:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:31:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:31:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:31:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:31:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:31:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:31:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:32:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:32:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:32:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:32:25: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:32:25: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:32:25: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:32:25: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:32:25: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:32:25: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:32:25: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:32:30: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:32:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:33:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:33:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:33:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:33:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:33:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:33:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:33:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:33:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:33:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:33:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:33:14: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:33:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:33:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:35:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:35:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:35:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:35:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:35:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:35:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:35:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:35:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:35:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:35:03: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:35:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:35:08: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:36:31: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:36:31: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:36:31: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:36:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:36:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:36:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:36:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:36:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:36:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:36:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:36:33: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:36:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:36:55: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:36:55: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:36:55: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:36:56: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:36:56: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:36:56: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:36:56: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:36:56: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:36:56: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:36:56: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:36:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:40:25: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:40:26: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:40:26: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:40:27: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:40:27: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:40:27: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:40:27: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:40:27: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:40:27: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:40:27: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:40:28: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:40:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:40:57: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:40:58: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:40:58: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:40:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:40:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:40:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:40:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:40:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:40:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:40:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:40:59: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:41:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:41:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:41:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:41:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:41:11: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:41:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:41:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:41:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:41:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:41:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:41:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:41:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:41:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:43:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:43:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:43:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:43:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:43:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:43:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:43:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:43:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:43:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:43:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:43:04: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:43:06: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:44:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:44:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:44:32: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:44:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:44:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:44:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:44:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:44:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:44:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:44:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:44:34: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:44:35: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:46:00: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:46:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:46:01: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:46:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:46:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:46:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:46:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:46:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:46:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:46:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:46:02: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:46:07: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:47:44: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:47:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:47:45: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:47:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:47:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:47:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:47:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:47:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:47:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:47:46: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:47:47: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:47:48: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:51:15: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:51:16: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:51:16: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:51:17: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:51:17: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:51:17: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:51:17: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:51:17: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:51:17: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:51:17: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:51:18: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:51:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/music.mp3
+Jan 28 16:55:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:55:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:55:10: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:55:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:55:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:55:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:55:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:55:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:55:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:55:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:55:12: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 16:56:48: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 16:56:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 16:56:49: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 16:56:50: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 16:56:50: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 16:56:51: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 16:56:51: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 16:56:51: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 16:56:51: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 16:56:51: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 16:56:51: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
+Jan 28 17:00:20: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /
+Jan 28 17:00:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/h42n42.css
+Jan 28 17:00:21: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /h42n42.js
+Jan 28 17:00:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/background.jpeg
+Jan 28 17:00:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/sickCreet.png
+Jan 28 17:00:22: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/meanCreet.png
+Jan 28 17:00:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/healthyCreet.png
+Jan 28 17:00:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/berserkCreet.png
+Jan 28 17:00:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/gameOver.png
+Jan 28 17:00:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /css/menu.jpg
+Jan 28 17:00:23: ocsigen:access: connection for localhost from 127.0.0.1 (Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0): /favicon.ico
