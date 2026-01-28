@@ -99,6 +99,7 @@ let%shared () =
       mutable music : Dom_html.audioElement Js.t option;
       creetLimit: int;
       mutable gameId: int;
+      mutable grabToken: int;
     }
 
     let generateRandomDirection () : (float * float) = 
@@ -119,6 +120,15 @@ let%shared () =
     
     let clamp v min max =
       Float.max min (Float.min max v)
+      
+      let neighborCells (cx, cy) =
+        [-1; 0; 1]
+        |> List.concat_map (fun dx ->
+          [-1; 0; 1]
+          |> List.map (fun dy ->
+              (cx + dx, cy + dy)
+            )
+          )
 
     let fix_pos crt ~w ~h =
       let x, y = crt.pos in
@@ -127,6 +137,10 @@ let%shared () =
         clamp x r (w -. r),
         clamp y r (h -. r)
       )
+
+    let cellFromPos (x, y) data =
+      (int_of_float (x /. (data.maxRadius *. 2.)),
+        int_of_float (y /. (data.maxRadius *. 2.)))
 
     let rebound crt ~w ~h =
       let x, y = crt.pos in
@@ -141,17 +155,59 @@ let%shared () =
       in
       crt.dir <- (dx, dy)
 
+      let sqr x = x *. x
+      
+    let creetDistance (x1, y1) (x2, y2) =
+      sqr (x2 -. x1) +. sqr (y2 -. y1)
+    
+    let nearestHealthy data creet =
+      let cx, cy = cellFromPos creet.pos data in
+      neighborCells (cx, cy)
+      |> List.filter_map (Grid.find_opt data.grid)
+      |> List.concat
+      |> List.filter (fun c -> c.status = Healthy)
+      |> List.fold_left (fun acc other ->
+          match acc with
+          | None -> Some other
+          | Some best ->
+            if creetDistance creet.pos other.pos < creetDistance creet.pos best.pos
+            then Some other
+            else acc
+        ) None
+
+    let dirToward (x1, y1) (x2, y2) =
+      let dx = x2 -. x1 in
+      let dy = y2 -. y1 in
+      let len = sqrt (dx *. dx +. dy *. dy) in
+      if len = 0. then (0., 0.)
+      else (dx /. len, dy /. len)
+
     let moveCircle crt data =
       let x, y = crt.pos in
-      let dx, dy = crt.dir in
       if data.grabbedCreetId = crt.id then
         let mx, my = data.mousePos in
         let vx, vy = data.grabbedCreetOffset in
-        crt.pos <- (
-          mx +. vx,
-          my +. vy
-        )
-      else
+        crt.pos <- (mx +. vx, my +. vy)
+      else 
+      match crt.status with
+      | Mean ->
+        begin match nearestHealthy data crt with
+        | None ->
+          let dx, dy = crt.dir in
+          crt.pos <- (
+            x +. dx *. crt.speed,
+            y +. dy *. crt.speed
+          )
+        | Some target ->
+          let dx, dy = dirToward crt.pos target.pos in
+          crt.dir <- (dx, dy);
+          crt.pos <- (
+            x +. dx *. crt.speed,
+            y +. dy *. crt.speed
+          )
+        end;
+      | _ ->
+        let dx, dy = crt.dir in
         crt.pos <- (
           x +. dx *. crt.speed,
           y +. dy *. crt.speed
@@ -180,10 +236,6 @@ let%shared () =
       fix_pos creet ~w:wWidth ~h:wHeight;
       drawCircle creet data
 
-    let cellFromPos (x, y) data =
-      (int_of_float (x /. (data.maxRadius *. 2.)),
-        int_of_float (y /. (data.maxRadius *. 2.)))
-
     let rebuildGrid data =
       data.grid <- Grid.create 1024;
       List.iter (fun crt -> 
@@ -204,14 +256,6 @@ let%shared () =
       let r = c1.radius +. c2.radius in
       (dx *. dx +. dy *. dy) <= (r *. r)
 
-    let neighborCells (cx, cy) =
-      [-1; 0; 1]
-      |> List.concat_map (fun dx ->
-        [-1; 0; 1]
-        |> List.map (fun dy ->
-            (cx + dx, cy + dy)
-          )
-        )
 
     let nearbyOverlaps grid creet data =
       let cx, cy = cellFromPos creet.pos data in
@@ -247,9 +291,10 @@ let%shared () =
       | _ -> ()
 
     let resetGrab data =
+      data.grabToken <- data.grabToken + 1;
       data.grabbedCreetId <- -1;
       data.grabbedCreetOffset <- (0., 0.)
-      
+
     let updateFullCanvas data sprite =
       let wHeight = float_of_int data.windowCanvas##.height in
       let wWidth = float_of_int data.windowCanvas##.width in
@@ -266,6 +311,7 @@ let%shared () =
         | Some spr ->  updateFullCanvas data spr.gameOver
         | None -> Lwt.return ()
       end else begin
+        data.baseSpeed <- data.baseSpeed *. 1.0002;
         rebuildGrid data;
         data.canvaCtx##clearRect 0. 0. wWidth wHeight;
         List.iter (fun creet ->
@@ -274,6 +320,7 @@ let%shared () =
         let toContaminate = ref [] in
 
         List.iter (fun creet ->
+          creet.speed <- data.baseSpeed;
           let _ , cy = creet.pos in
           match creet.status with
           | Healthy ->
@@ -356,8 +403,8 @@ let%shared () =
       } in
       newCreet
 
-      
-    let updateCanvasSize canvas : float = 
+
+    let updateCanvasSize canvas : float =
       let inner_w = float_of_int Dom_html.window##.innerWidth in
       let inner_h = float_of_int Dom_html.window##.innerHeight in
       let ref_h = 1080. in
@@ -453,9 +500,7 @@ let%shared () =
 
     let rec reproduceCreet data =
       let prevId = data.gameId in
-      Firebug.console##log (Js.string ("Prev : " ^ string_of_int data.gameId));
       let%lwt () = Lwt_js.sleep 5. in
-      Firebug.console##log (Js.string ("NewId : " ^ string_of_int data.gameId));
       if data.gameId = prevId && data.isRunning && (List.length data.creets) < data.creetLimit then begin
         let healthyCreets = List.filter (fun creet -> creet.status = Healthy) data.creets in
         let creetQuantity = List.length healthyCreets in
@@ -507,7 +552,7 @@ let%shared () =
             (canvas##getContext Dom_html._2d_)
           in
 
-          let rad = 35. in
+          let rad = 40. *. baseScale in
 
           let data: data = {
             isRunning = false;
@@ -528,6 +573,7 @@ let%shared () =
             music = None;
             creetLimit = 10;
             gameId = 0;
+            grabToken = 0;
           } in
           
           generateDataInitalCreets data;
@@ -583,12 +629,13 @@ let%shared () =
                   let mx, my = mousePos in
                   let cx, cy = c.pos in
                   data.grabbedCreetOffset <- (cx -. mx, cy -. my);
+                  data.grabToken <- data.grabToken + 1;
+                  let tempToken = data.grabToken in
                   c.dir <- generateRandomDirection ();
                   Lwt.async (fun () ->
                     let%lwt () = Lwt_js.sleep 3.0 in
-                      if data.grabbedCreetId = c.id then begin
+                      if data.grabToken = tempToken && data.grabbedCreetId = c.id then begin
                         resetGrab data;
-                        Firebug.console##log (Js.string "Stopped Grab");
                       end;
                       Lwt.return_unit  
                   );
@@ -602,6 +649,12 @@ let%shared () =
               Js._true
             );
 
+          data.windowCanvas##.onmouseout :=
+              Dom_html.handler (fun _ -> 
+                resetGrab data;
+                Js._true  
+              );
+
           data.windowCanvas##.onmousemove :=
             Dom_html.handler (fun ev ->
               data.mousePos <- mousePositionOnCanvas ev data;
@@ -610,17 +663,27 @@ let%shared () =
 
           Dom_html.window##.onresize := Dom.handler (fun _ ->
             let previousScale = data.scale in
-            let ratio = data.scale /. previousScale in
             data.scale <- updateCanvasSize canvas;
-            data.baseRadius <- data.baseRadius *. (data.scale);
+            let ratio = data.scale /. previousScale in
+            data.baseRadius <- data.baseRadius *. (ratio);
             data.maxRadius <- data.baseRadius *. 4.;
-            data.baseSpeed <- data.baseSpeed *. data.scale;
+            data.baseSpeed <- data.baseSpeed *. ratio;
             List.iter (fun creet -> 
               creet.speed <- data.baseSpeed;
               let x,y = creet.pos in
               creet.pos <- (x *. ratio, y *. ratio);
               creet.radius <- creet.radius *. ratio;
             ) data.creets;
+            if data.isInMenu then begin
+              Lwt.async (fun () ->
+                tryLoadingSprites 
+                ~onReady:(fun sprites ->
+                  updateFullCanvas data sprites.menu
+                )
+                data
+                0
+              )
+            end;
             Js._true
           );
           Js._true
