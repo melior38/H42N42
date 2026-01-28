@@ -155,7 +155,7 @@ let%shared () =
       in
       crt.dir <- (dx, dy)
 
-      let sqr x = x *. x
+    let sqr x = x *. x
       
     let creetDistance (x1, y1) (x2, y2) =
       sqr (x2 -. x1) +. sqr (y2 -. y1)
@@ -289,11 +289,28 @@ let%shared () =
       | Healthy ->
         handleContamination creet
       | _ -> ()
+    
+    let pointInRect ~px ~py ~x ~y ~w ~h =
+      px >= x
+      && px <= x +. w
+      && py >= y
+      && py <= y +.h
 
     let resetGrab data =
       data.grabToken <- data.grabToken + 1;
-      data.grabbedCreetId <- -1;
-      data.grabbedCreetOffset <- (0., 0.)
+      let grabbedCreet = List.find_opt (fun creet -> creet.id = data.grabbedCreetId) data.creets in
+      match grabbedCreet with
+      | None -> 
+        data.grabbedCreetId <- -1;
+        data.grabbedCreetOffset <- (0., 0.)
+      | Some crt ->
+        let cx, cy = crt.pos in
+        let wHeight = float_of_int data.windowCanvas##.height in
+        let wWidth = float_of_int data.windowCanvas##.width in
+        if pointInRect ~px:cx ~py:cy ~x:(wWidth *. 0.25) ~y:0. ~w:(wWidth *. 0.5) ~h:(wHeight *. 0.25) then
+          crt.status <- Healthy;
+        data.grabbedCreetId <- -1;
+        data.grabbedCreetOffset <- (0., 0.)
 
     let updateFullCanvas data sprite =
       let wHeight = float_of_int data.windowCanvas##.height in
@@ -311,7 +328,7 @@ let%shared () =
         | Some spr ->  updateFullCanvas data spr.gameOver
         | None -> Lwt.return ()
       end else begin
-        data.baseSpeed <- data.baseSpeed *. 1.0002;
+        data.baseSpeed <- data.baseSpeed *. 1.0001;
         rebuildGrid data;
         data.canvaCtx##clearRect 0. 0. wWidth wHeight;
         List.iter (fun creet ->
@@ -332,20 +349,17 @@ let%shared () =
             if (cy +. creet.radius) > (wHeight *. 0.85) then
               contaminate data 1. creet
           | status ->
-            if (cy -. creet.radius) < (wHeight *. 0.15) then
-              creet.status <- Healthy
-            else
-              let overlap = nearbyOverlaps data.grid creet data in
-              List.iter (fun other -> 
-                toContaminate := other :: !toContaminate
-              ) overlap;
-              if status = Berserk then begin
-                creet.radius <- clamp (creet.radius +. (0.005 *. creet.radius)) data.baseRadius data.maxRadius
-              end else if status = Mean then begin
-                creet.radius <- clamp (creet.radius -. (0.005 *. creet.radius)) (data.baseRadius *. 0.85) data.maxRadius;
-              end else begin
-                creet.radius <- clamp (creet.radius -. (0.005 *. creet.radius)) data.baseRadius data.maxRadius;
-              end;
+            let overlap = nearbyOverlaps data.grid creet data in
+            List.iter (fun other -> 
+              toContaminate := other :: !toContaminate
+            ) overlap;
+            if status = Berserk then begin
+              creet.radius <- clamp (creet.radius +. (0.005 *. creet.radius)) data.baseRadius data.maxRadius
+            end else if status = Mean then begin
+              creet.radius <- clamp (creet.radius -. (0.005 *. creet.radius)) (data.baseRadius *. 0.85) data.maxRadius;
+            end else begin
+              creet.radius <- clamp (creet.radius -. (0.005 *. creet.radius)) data.baseRadius data.maxRadius;
+            end;
         ) data.creets;
 
         List.iter (contaminate data 0.1) !toContaminate;
