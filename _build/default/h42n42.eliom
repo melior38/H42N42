@@ -101,6 +101,7 @@ let%shared () =
       mutable gameId: int;
       mutable grabToken: int;
       mutable gameDateTime: Js.date Js.t;
+      mutable healedCreets: int;
     }
 
     let generateRandomDirection () : (float * float) = 
@@ -330,8 +331,12 @@ let%shared () =
         let cx, cy = crt.pos in
         let wHeight = float_of_int data.windowCanvas##.height in
         let wWidth = float_of_int data.windowCanvas##.width in
-        if pointInRect ~px:cx ~py:cy ~x:(wWidth *. 0.25) ~y:0. ~w:(wWidth *. 0.5) ~h:(wHeight *. 0.25) then
-          crt.status <- Healthy;
+        if pointInRect ~px:cx ~py:cy ~x:(wWidth *. 0.25) ~y:0. ~w:(wWidth *. 0.5) ~h:(wHeight *. 0.25) then begin
+          if crt.status <> Healthy then begin
+            data.healedCreets <- data.healedCreets + 1
+          end;
+          crt.status <- Healthy
+        end;
         data.grabbedCreetId <- -1;
         data.grabbedCreetOffset <- (0., 0.)
 
@@ -355,12 +360,18 @@ let%shared () =
       let s = secs mod 60 in
       Printf.sprintf "%02d:%02d" m s
 
-    let drawTimer ctx data w =
+    let drawTimer ctx data =
       let elapsed = elapsedSeconds data in
       let txt = "TIME " ^ formatTime elapsed in
       ctx##.font := (Js.string (Printf.sprintf "%.0fpx 'Press Start 2P'" (16. *. data.scale)));
       ctx##.fillStyle := Js.string "white";
-      ctx##fillText (Js.string txt) (w -. (200. *. data.scale)) (30. *. data.scale)
+      ctx##fillText (Js.string txt) ((float_of_int data.windowCanvas##.width) -. (200. *. data.scale)) (30. *. data.scale)
+
+    let drawScore ctx data =
+      let txt = "Healed Creets: " ^ (string_of_int data.healedCreets) in
+      ctx##.font := (Js.string (Printf.sprintf "%.0fpx 'Press Start 2P'" (16. *. data.scale)));
+      ctx##.fillStyle := Js.string "white";
+      ctx##fillText (Js.string txt) (20. *. data.scale) (30. *. data.scale)
 
     let rec gameIteration (data: data) : unit Lwt.t =
       let%lwt () = Lwt_js.sleep data.refresh_rate in
@@ -370,7 +381,8 @@ let%shared () =
         match data.sprites with
         | Some spr -> 
           let _ = updateFullCanvas data spr.gameOver in
-          drawTimer data.canvaCtx data wWidth;
+          drawTimer data.canvaCtx data;
+          drawScore data.canvaCtx data;
           Lwt.return ()
         | None -> Lwt.return ()
       end else begin
@@ -381,7 +393,8 @@ let%shared () =
           drawCreet creet data;
         ) data.creets;
 
-        drawTimer data.canvaCtx data wWidth;
+        drawTimer data.canvaCtx data;
+        drawScore data.canvaCtx data;
 
         let toContaminate = ref [] in
 
@@ -593,6 +606,7 @@ let%shared () =
       data.baseSpeed <- 4. *. data.scale;
       generateDataInitalCreets data;
       rebuildGrid data;
+      data.healedCreets <- 0;
 
       List.iter (fun creet ->
         Lwt.async (fun () -> creetThread creet data)
@@ -652,6 +666,7 @@ let%shared () =
             gameId = 0;
             grabToken = 0;
             gameDateTime = new%js Js.date_now;
+            healedCreets = 0;
           } in
           
           generateDataInitalCreets data;
@@ -760,7 +775,10 @@ let%shared () =
                   Lwt.async (fun () ->
                     tryLoadingSprites 
                     ~onReady:(fun sprites ->
-                      updateFullCanvas data sprites.menu
+                      let _ = updateFullCanvas data sprites.menu in
+                      drawTimer data.canvaCtx data;
+                      drawScore data.canvaCtx data;
+                      Lwt.return_unit
                     )
                     data
                     0
@@ -769,7 +787,10 @@ let%shared () =
                   Lwt.async (fun () ->
                     tryLoadingSprites 
                     ~onReady:(fun sprites ->
-                      updateFullCanvas data sprites.gameOver
+                      let _ = updateFullCanvas data sprites.gameOver in
+                      drawTimer data.canvaCtx data;
+                      drawScore data.canvaCtx data;
+                      Lwt.return_unit
                     )
                     data
                     0
