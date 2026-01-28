@@ -56,10 +56,20 @@ let%shared () =
       id: int;
       mutable pos : float * float;
       mutable dir : float * float;
-      speed : float;
-      status : status;
-      radius : float;
+      mutable speed : float;
+      mutable status : status;
+      mutable radius : float;
     }
+
+    module Cell = struct
+      type t = int * int
+      let equal = (=)
+      let hash = Hashtbl.hash
+    end
+
+    module Grid = Hashtbl.Make(Cell)
+
+    type grid = creet list Grid.t
 
     type data = {
       isRunning: bool;
@@ -68,6 +78,13 @@ let%shared () =
       mutable creets: creet list;
       mutable scale: float;
       canvaCtx: Dom_html.canvasRenderingContext2D Js.t;
+      baseSpeed: float;
+      baseRadius: float;
+      mutable maxRadius: float;
+      mutable grid: grid;
+      mutable grabbedCreetId: int;
+      mutable grabbedCreetOffset: (float * float);
+      mutable mousePos: (float * float);
     }
 
     let generateRandomDirection () : (float * float) = 
@@ -88,18 +105,18 @@ let%shared () =
     let clamp v min max =
       Float.max min (Float.min max v)
 
-    let fix_pos crt ~w ~h data =
+    let fix_pos crt ~w ~h =
       let x, y = crt.pos in
-      let r = (crt.radius *. data.scale) in
+      let r = crt.radius in
       crt.pos <- (
         clamp x r (w -. r),
         clamp y r (h -. r)
       )
 
-    let rebound crt ~w ~h data =
+    let rebound crt ~w ~h =
       let x, y = crt.pos in
       let dx, dy = crt.dir in
-      let r = (crt.radius *. data.scale) in
+      let r = crt.radius in
 
       let dx =
         if x -. r <= 0. || x +. r >= w then -.dx else dx
@@ -109,19 +126,27 @@ let%shared () =
       in
       crt.dir <- (dx, dy)
 
-    let moveCircle crt =
+    let moveCircle crt data =
       let x, y = crt.pos in
       let dx, dy = crt.dir in
-      crt.pos <- (
-        x +. dx *. crt.speed,
-        y +. dy *. crt.speed
-      )
+      if data.grabbedCreetId = crt.id then
+        let mx, my = data.mousePos in
+        let vx, vy = data.grabbedCreetOffset in
+        crt.pos <- (
+          mx +. vx,
+          my +. vy
+        )
+      else
+        crt.pos <- (
+          x +. dx *. crt.speed,
+          y +. dy *. crt.speed
+        )
 
     let drawCircle circle data =
       let ctx = data.canvaCtx in
       let x, y = circle.pos in
       ctx##beginPath;
-      ctx##arc x y (circle.radius *. data.scale) 0. (Float.pi*. 2.) Js._false;
+      ctx##arc x y circle.radius 0. (Float.pi*. 2.) Js._false;
       ctx##.fillStyle := Js.string (statusColor circle.status);
       ctx##fill
       
@@ -132,10 +157,75 @@ let%shared () =
       let _ = Berserk in
       let _ = Sick in
       probTurn circle;
-      moveCircle circle;
-      rebound circle ~w:wWidth ~h:wHeight data;
-      fix_pos circle ~w:wWidth ~h:wHeight data;
+      moveCircle circle data;
+      rebound circle ~w:wWidth ~h:wHeight;
+      fix_pos circle ~w:wWidth ~h:wHeight;
       drawCircle circle data
+
+    let cellFromPos (x, y) data =
+      (int_of_float (x /. (data.maxRadius *. 2.)),
+        int_of_float (y /. (data.maxRadius *. 2.)))
+
+    let rebuildGrid data =
+      data.grid <- Grid.create 1024;
+      List.iter (fun crt -> 
+        let cell = cellFromPos crt.pos data in
+        let lst =
+          match Grid.find_opt data.grid cell with
+          | Some l -> l
+          | None -> []
+        in
+        Grid.replace data.grid cell (crt :: lst)
+      ) data.creets
+
+    let overlaps c1 c2 =
+      let x1, y1 = c1.pos in
+      let x2, y2 = c2.pos in
+      let dx = x1 -. x2 in
+      let dy = y1 -. y2 in
+      let r = c1.radius +. c2.radius in
+      (dx *. dx +. dy *. dy) <= (r *. r)
+
+    let neighborCells (cx, cy) =
+      [-1; 0; 1]
+      |> List.concat_map (fun dx ->
+        [-1; 0; 1]
+        |> List.map (fun dy ->
+            (cx + dx, cy + dy)
+          )
+        )
+
+    let nearbyOverlaps grid creet data =
+      let cx, cy = cellFromPos creet.pos data in
+      neighborCells (cx, cy)
+      |> List.filter_map (Grid.find_opt grid)
+      |> List.concat
+      |> List.filter (fun other -> 
+        other.id <> creet.id && overlaps creet other
+      )
+
+    let handleContamination creet = 
+      creet.status <- Sick;
+        if Random.float 1. < 0.5 then
+          if Random.float 1. < 0.1 then
+            creet.status <- Berserk
+          else ()
+        else if Random.float 1. < 0.1 then
+          creet.status <- Mean
+        else ()
+
+    let contaminate data baseProbability creet =
+      let _ , cy = creet.pos in
+      if (cy -. creet.radius) < ((float_of_int data.windowCanvas##.height) *. 0.2) then () else
+      if Random.float 1. >= baseProbability then () else
+      match creet.status with
+      | Healthy ->
+        handleContamination creet
+      | _ -> ()
+
+    let resetGrab data =
+      data.grabbedCreetId <- -1;
+      data.grabbedCreetOffset <- (0., 0.)
 
     let rec gameIteration (data: data) : unit Lwt.t =
       let%lwt () = Lwt_js.sleep data.refresh_rate in
@@ -145,12 +235,71 @@ let%shared () =
       else begin
         let wHeight = float_of_int data.windowCanvas##.height in
         let wWidth = float_of_int data.windowCanvas##.width in
+        rebuildGrid data;
         data.canvaCtx##clearRect 0. 0. wWidth wHeight;
         List.iter (fun creet ->
           handleCircle creet data wWidth wHeight;
         ) data.creets;
+
+        let toContaminate = ref [] in
+
+        List.iter (fun creet ->
+          let _ , cy = creet.pos in
+          match creet.status with
+          | Healthy -> 
+            if (cy +. creet.radius) > (wHeight *. 0.8) then
+              contaminate data 1. creet
+          | _ ->
+            if (cy -. creet.radius) < (wHeight *. 0.2) then
+              creet.status <- Healthy
+            else
+              let overlap = nearbyOverlaps data.grid creet data in
+              List.iter (fun other -> 
+                toContaminate := other :: !toContaminate
+              ) overlap
+        ) data.creets;
+
+        List.iter (contaminate data 0.1) !toContaminate;
+
         gameIteration data
       end
+
+    let mousePositionOnCanvas event data =
+      let canvas = data.windowCanvas in
+      let rect = canvas##getBoundingClientRect in
+      let mx =
+        (float_of_int event##.clientX) -. rect##.left
+      in
+      let my =
+        (float_of_int event##.clientY) -. rect##.top
+      in
+      (mx, my)
+         
+
+    let containsPoint creet (mx, my) =
+      let x, y = creet.pos in
+      let dx = mx -. x in
+      let dy = my -. y in
+      (dx *. dx +. dy *. dy) <= (creet.radius *. creet.radius)
+
+
+    let clickedCreets grid (mx, my) data=
+      let cx, cy = cellFromPos (mx, my) data in
+      neighborCells (cx, cy)
+      |> List.filter_map (Grid.find_opt grid)
+      |> List.concat
+      |> List.filter (fun c -> 
+          containsPoint c (mx, my)
+        )
+
+      let hd_opt = function
+        | [] -> None
+        | x :: _ -> Some x
+
+    let creetAtTopmost grid (mx, my) data =
+      clickedCreets grid (mx, my) data
+      |> List.sort(fun a b -> compare b.id a.id)
+      |> hd_opt
 
     let generateCreet id speed base_radius canvas: creet=
       let newCreet = {
@@ -162,8 +311,9 @@ let%shared () =
         radius = base_radius;
       } in
       newCreet
+
       
-    let resizeCanvas canvas : float = 
+    let updateCanvasSize canvas : float = 
       let inner_w = float_of_int Dom_html.window##.innerWidth in
       let inner_h = float_of_int Dom_html.window##.innerHeight in
       let ref_h = 1080. in
@@ -178,6 +328,7 @@ let%shared () =
       canvas##.style##.top := Js.string (string_of_int top ^ "px");
       scale
 
+
     let () = 
       Dom_html.window##.onload := Dom.handler (fun _ ->
         let open Js_of_ocaml in
@@ -189,7 +340,7 @@ let%shared () =
         | Some div ->
           let canvas = Dom_html.createCanvas doc in
           canvas##.id := Js.string "canvas";
-          let baseScale = resizeCanvas canvas in
+          let baseScale = updateCanvasSize canvas in
           Dom.appendChild div canvas;
           let ctx =
             (canvas##getContext Dom_html._2d_)
@@ -202,13 +353,70 @@ let%shared () =
             creets = [];
             scale = baseScale;
             canvaCtx = ctx;
+            baseSpeed = 4.;
+            baseRadius = 30.;
+            maxRadius = 120.;
+            grid = (Grid.create 1024);
+            grabbedCreetId = -1;
+            grabbedCreetOffset = (0., 0.);
+            mousePos = (0., 0.)
           } in
 
-          data.creets <- (generateCreet 0 4. 20. canvas) :: data.creets;
-          data.creets <- (generateCreet 1 4. 20. canvas) :: data.creets;
+          data.creets <- (generateCreet 0 (4. *. data.scale) (data.baseRadius *. data.scale) canvas) :: data.creets;
+          data.creets <- (generateCreet 1 (4. *. data.scale) (data.baseRadius *. data.scale) canvas) :: data.creets;
+
+          rebuildGrid data;
+
+          data.windowCanvas##.onmousedown :=
+            Dom_html.handler (fun ev ->
+              rebuildGrid data;
+              let mousePos = mousePositionOnCanvas ev data in
+              match creetAtTopmost data.grid (mousePos) data with
+              | None -> 
+                Firebug.console##log (Js.string "No creet clicked !");
+                Js._true
+              | Some c ->
+                  Firebug.console##log (Js.string ("Clicked on crit with id : " ^ (string_of_int c.id)));
+                  data.grabbedCreetId <- c.id;
+                  let mx, my = mousePos in
+                  let cx, cy = c.pos in
+                  data.grabbedCreetOffset <- (cx -. mx, cy -. my);
+                  c.dir <- generateRandomDirection ();
+                  Lwt.async (fun () ->
+                  let%lwt () = Lwt_js.sleep 3.0 in
+                    if data.grabbedCreetId = c.id then
+                      resetGrab data;
+                    Lwt.return_unit  
+                  );
+                Js._true
+            );
+            
+
+          data.windowCanvas##.onmouseup :=
+            Dom_html.handler (fun _ ->
+              resetGrab data;
+              Js._true
+            );
+
+          data.windowCanvas##.onmousemove :=
+            Dom_html.handler (fun ev ->
+              data.mousePos <- mousePositionOnCanvas ev data;
+              (* Firebug.console##log data.mousePos; *)
+              Js._true  
+            );
 
           Dom_html.window##.onresize := Dom.handler (fun _ -> 
-            data.scale <- resizeCanvas canvas;
+            let previousScale = data.scale in
+            data.scale <- updateCanvasSize canvas;
+            data.maxRadius <- data.maxRadius *. (data.scale /. previousScale);
+            List.iter (fun creet -> 
+              creet.speed <- data.baseSpeed *. data.scale;
+              let ratio = data.scale /. previousScale in
+              let x,y = creet.pos in
+              Firebug.console##log ratio;
+              creet.pos <- (x *. ratio, y *. ratio);
+              creet.radius <- (creet.radius *. ratio)
+            ) data.creets;
             Js._true
           );
   
