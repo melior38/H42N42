@@ -2,13 +2,12 @@
 //# buildInfo:effects=false, kind=cmo, use-js-string=true, version=5.9.1
 
 //# unitInfo: Provides: H42n42
-//# unitInfo: Requires: Eliom_client, Eliom_client_core, Eliom_content, Eliom_registration, Eliom_service, Js_of_ocaml__Dom, Js_of_ocaml__Dom_html, Js_of_ocaml__Firebug, Js_of_ocaml__Js, Js_of_ocaml_lwt__Lwt_js, Lwt, Stdlib, Stdlib__Float, Stdlib__Hashtbl, Stdlib__List, Stdlib__Printf, Stdlib__Random
+//# unitInfo: Requires: Eliom_client, Eliom_client_core, Eliom_content, Eliom_registration, Eliom_service, Js_of_ocaml__Dom, Js_of_ocaml__Dom_html, Js_of_ocaml__Firebug, Js_of_ocaml__Js, Js_of_ocaml_lwt__Lwt_js, Js_of_ocaml_lwt__Lwt_js_events, Lwt, Stdlib, Stdlib__Float, Stdlib__Hashtbl, Stdlib__List, Stdlib__Printf, Stdlib__Random
 (function
   (globalThis){
    "use strict";
    var
     runtime = globalThis.jsoo_runtime,
-    cst_P = "P",
     cst_draw_zone$1 = "draw-zone",
     cst_h42n42_eliom = "h42n42.eliom",
     cst_px$1 = "px",
@@ -29,6 +28,11 @@
     return (f.l >= 0 ? f.l : f.l = f.length) === 3
             ? f(a0, a1, a2)
             : runtime.caml_call_gen(f, [a0, a1, a2]);
+   }
+   function caml_call5(f, a0, a1, a2, a3, a4){
+    return (f.l >= 0 ? f.l : f.l = f.length) === 5
+            ? f(a0, a1, a2, a3, a4)
+            : runtime.caml_call_gen(f, [a0, a1, a2, a3, a4]);
    }
    function caml_call10(f, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9){
     return (f.l >= 0 ? f.l : f.l = f.length) === 10
@@ -54,6 +58,7 @@
     Stdlib = global_data.Stdlib,
     Js_of_ocaml_Firebug = global_data.Js_of_ocaml__Firebug,
     Stdlib_Random = global_data.Stdlib__Random,
+    Js_of_ocaml_lwt_Lwt_js_events = global_data.Js_of_ocaml_lwt__Lwt_js_events,
     Js_of_ocaml_Js = global_data.Js_of_ocaml__Js,
     Js_of_ocaml_Dom_html = global_data.Js_of_ocaml__Dom_html,
     Js_of_ocaml_Dom = global_data.Js_of_ocaml__Dom,
@@ -816,238 +821,60 @@
                       (function(sprites){return gameIteration(data);}, data, 0);
              });
    }
-   var
-    t106 =
-      caml_call1
-       (Js_of_ocaml_Dom[10],
-        function(param){
-         caml_call1(Stdlib_Random[3], 0);
-         var
-          doc = Js_of_ocaml_Dom_html[2],
-          match = caml_call1(Js_of_ocaml_Dom_html[3], cst_draw_zone$0);
-         if(match){
-          var
-           div = match[1],
-           canvas = caml_call1(Js_of_ocaml_Dom_html[111], doc);
-          canvas.id = "canvas";
-          var baseScale = updateCanvasSize(canvas);
-          caml_call2(Js_of_ocaml_Dom[5], div, canvas);
-          var
-           t87 = Js_of_ocaml_Dom_html[1],
-           ctx = canvas.getContext(t87),
-           rad = 40. * baseScale,
-           t89 = Js_of_ocaml_Js[26],
-           _l_ = new t89,
-           data =
-             [0,
-              0,
-              canvas,
-              0.016,
-              0,
-              baseScale,
-              ctx,
-              4.,
-              rad,
-              rad * 4.,
-              caml_call1(Grid[1], 1024),
-              -1,
-              _k_,
-              _j_,
-              0,
-              1,
-              0,
-              10,
-              0,
-              0,
-              _l_];
-          generateDataInitalCreets(data);
-          rebuildGrid(data);
-          caml_call1
-           (Lwt[11],
-            function(param){
-             return tryLoadingSprites
-                     (function(sprites){
-                       return updateFullCanvas(data, sprites[6]);
-                      },
-                      data,
-                      0);
-            });
-          var
-           t94 =
-             caml_call1
-              (Js_of_ocaml_Dom_html[10],
-               function(t90){
-                var match = caml_call1(Js_of_ocaml_Js[6][10], t90.key);
-                if(! match) return Js_of_ocaml_Js[7];
-                var
-                 key = match[1],
-                 key$0 = runtime.caml_string_of_jsstring(key);
-                a:
-                {
-                 if(key$0 !== "r" && key$0 !== "R"){
-                  if(key$0 !== "p" && key$0 !== cst_P){
-                   var
-                    _x_ = key$0 === "m" ? 1 : 0,
-                    _y_ = _x_ || (key$0 === cst_P ? 1 : 0);
-                   if(! _y_) break a;
-                   var match$0 = data[16];
-                   if(match$0){
-                    var mus = match$0[1], t92 = ! ! (1 - (mus.muted | 0));
-                    mus.muted = t92;
-                   }
-                   break a;
-                  }
-                  if(! data[15]) break a;
-                  var
-                   audio =
-                     caml_call1
-                      (Js_of_ocaml_Dom_html[108], Js_of_ocaml_Dom_html[2]);
-                  audio.src = "/css/music.mp3";
-                  var t72 = Js_of_ocaml_Js[7];
-                  audio.loop = t72;
-                  audio.volume = 0.5;
-                  audio.play();
-                  data[16] = [0, audio];
-                  data[15] = 0;
-                  restartGame(data);
-                  break a;
-                 }
-                 var _v_ = 1 - data[1], _w_ = _v_ ? 1 - data[15] : _v_;
-                 if(_w_) restartGame(data);
+   caml_call1
+    (Lwt[11],
+     function(param){
+      var ppx_lwt_0 = caml_call1(Js_of_ocaml_lwt_Lwt_js_events[147], 0);
+      return caml_call3
+              (Lwt[81],
+               function(exn){
+                try{throw caml_maybe_attach_backtrace(exn, 0);}
+                catch(exn){var exn$0 = caml_wrap_exception(exn); return exn$0;
                 }
-                return Js_of_ocaml_Js[7];
-               }),
-           t95 = Js_of_ocaml_Dom_html[8];
-          t95.onkeydown = t94;
-          var
-           t96 =
-             caml_call1
-              (Js_of_ocaml_Dom_html[10],
-               function(ev){
-                if(! data[1]) return Js_of_ocaml_Js[7];
-                rebuildGrid(data);
-                var
-                 mousePos = mousePositionOnCanvas(ev, data),
-                 grid = data[10],
-                 my = mousePos[2],
-                 mx = mousePos[1],
-                 match = cellFromPos([0, mx, my], data),
-                 cy = match[2],
-                 cx = match[1],
-                 _o_ = neighborCells([0, cx, cy]),
-                 _p_ = caml_call1(Grid[8], grid),
-                 _q_ = caml_call1(caml_call1(Stdlib_List[23], _p_), _o_),
-                 _r_ = caml_call1(Stdlib_List[14], _q_),
-                 _s_ =
-                   caml_call1
-                    (caml_call1
-                      (Stdlib_List[44],
-                       function(creet){
-                        var
-                         match = creet[2],
-                         y = match[2],
-                         x = match[1],
-                         dx = mx - x,
-                         dy = my - y,
-                         rad = creet[6] + 5. * data[5];
-                        return dx * dx + dy * dy <= rad * rad ? 1 : 0;
-                       }),
-                     _r_),
-                 param =
-                   caml_call1
-                    (caml_call1
-                      (Stdlib_List[59],
-                       function(a, b){return runtime.caml_int_compare(b[1], a[1]);}),
-                     _s_);
-                if(param)
-                 var x = param[1], match$0 = [0, x];
-                else
-                 var match$0 = 0;
-                if(! match$0) return Js_of_ocaml_Js[7];
-                var c = match$0[1];
-                data[11] = c[1];
-                var
-                 my$0 = mousePos[2],
-                 mx$0 = mousePos[1],
-                 match$1 = c[2],
-                 cy$0 = match$1[2],
-                 cx$0 = match$1[1];
-                data[12] = [0, cx$0 - mx$0, cy$0 - my$0];
-                data[19] = data[19] + 1 | 0;
-                var tempToken = data[19];
-                c[3] = generateRandomDirection(0);
-                caml_call1
-                 (Lwt[11],
-                  function(param){
-                   var ppx_lwt_0 = caml_call1(Js_of_ocaml_lwt_Lwt_js[1], 3.);
-                   return caml_call3
-                           (Lwt[81],
-                            function(exn){
-                             try{throw caml_maybe_attach_backtrace(exn, 0);}
-                             catch(exn){
-                              var exn$0 = caml_wrap_exception(exn);
-                              return exn$0;
-                             }
-                            },
-                            ppx_lwt_0,
-                            function(param){
-                             var
-                              _t_ = data[19] === tempToken ? 1 : 0,
-                              _u_ = _t_ ? data[11] === c[1] ? 1 : 0 : _t_;
-                             if(_u_) resetGrab(data);
-                             return Lwt[36];
-                            });
-                  });
-                return Js_of_ocaml_Js[7];
-               }),
-           t97 = data[2];
-          t97.onmousedown = t96;
-          var
-           t98 =
-             caml_call1
-              (Js_of_ocaml_Dom_html[10],
-               function(param){resetGrab(data); return Js_of_ocaml_Js[7];}),
-           t99 = data[2];
-          t99.onmouseup = t98;
-          var
-           t100 =
-             caml_call1
-              (Js_of_ocaml_Dom_html[10],
-               function(param){resetGrab(data); return Js_of_ocaml_Js[7];}),
-           t101 = data[2];
-          t101.onmouseout = t100;
-          var
-           t102 =
-             caml_call1
-              (Js_of_ocaml_Dom_html[10],
-               function(ev){
-                data[13] = mousePositionOnCanvas(ev, data);
-                return Js_of_ocaml_Js[7];
-               }),
-           t103 = data[2];
-          t103.onmousemove = t102;
-          var
-           t104 =
-             caml_call1
-              (Js_of_ocaml_Dom[10],
+               },
+               ppx_lwt_0,
                function(param){
-                var previousScale = data[5];
-                data[5] = updateCanvasSize(canvas);
-                var ratio = data[5] / previousScale;
-                data[8] = data[8] * ratio;
-                data[9] = data[8] * 4.;
-                data[7] = data[7] * ratio;
-                caml_call2
-                 (Stdlib_List[18],
-                  function(creet){
-                   creet[4] = data[7];
-                   var match = creet[2], y = match[2], x = match[1];
-                   creet[2] = [0, x * ratio, y * ratio];
-                   creet[6] = creet[6] * ratio;
-                   return 0;
-                  },
-                  data[4]);
-                if(data[15])
+                caml_call1(Stdlib_Random[3], 0);
+                var
+                 doc = Js_of_ocaml_Dom_html[2],
+                 match = caml_call1(Js_of_ocaml_Dom_html[3], cst_draw_zone$0);
+                if(match){
+                 var
+                  div = match[1],
+                  canvas = caml_call1(Js_of_ocaml_Dom_html[111], doc);
+                 canvas.id = "canvas";
+                 var baseScale = updateCanvasSize(canvas);
+                 caml_call2(Js_of_ocaml_Dom[5], div, canvas);
+                 var
+                  t87 = Js_of_ocaml_Dom_html[1],
+                  ctx = canvas.getContext(t87),
+                  rad = 40. * baseScale,
+                  t89 = Js_of_ocaml_Js[26],
+                  _l_ = new t89,
+                  data =
+                    [0,
+                     0,
+                     canvas,
+                     0.016,
+                     0,
+                     baseScale,
+                     ctx,
+                     4.,
+                     rad,
+                     rad * 4.,
+                     caml_call1(Grid[1], 1024),
+                     -1,
+                     _k_,
+                     _j_,
+                     0,
+                     1,
+                     0,
+                     10,
+                     0,
+                     0,
+                     _l_];
+                 generateDataInitalCreets(data);
+                 rebuildGrid(data);
                  caml_call1
                   (Lwt[11],
                    function(param){
@@ -1058,34 +885,239 @@
                              data,
                              0);
                    });
-                else{
-                 var _m_ = 1 - data[1], _n_ = _m_ ? 1 - data[15] : _m_;
-                 if(_n_)
-                  caml_call1
-                   (Lwt[11],
-                    function(param){
-                     return tryLoadingSprites
-                             (function(sprites){
-                               return updateFullCanvas(data, sprites[5]);
-                              },
-                              data,
-                              0);
-                    });
+                 caml_call1
+                  (Lwt[11],
+                   function(param){
+                    return caml_call5
+                            (Js_of_ocaml_lwt_Lwt_js_events[88],
+                             0,
+                             0,
+                             0,
+                             Js_of_ocaml_Dom_html[8],
+                             function(t90, stop){
+                              var match = caml_call1(Js_of_ocaml_Js[6][10], t90.key);
+                              if(! match) return Lwt[36];
+                              var
+                               key = match[1],
+                               key$0 = runtime.caml_string_of_jsstring(key);
+                              a:
+                              {
+                               if(key$0 !== "r" && key$0 !== "R"){
+                                if(key$0 !== "p" && key$0 !== "P"){
+                                 var
+                                  _x_ = key$0 === "m" ? 1 : 0,
+                                  _y_ = _x_ || (key$0 === "M" ? 1 : 0);
+                                 if(! _y_) break a;
+                                 var match$0 = data[16];
+                                 if(match$0){
+                                  var mus = match$0[1], t92 = ! ! (1 - (mus.muted | 0));
+                                  mus.muted = t92;
+                                 }
+                                 break a;
+                                }
+                                if(! data[15]) break a;
+                                var
+                                 audio =
+                                   caml_call1
+                                    (Js_of_ocaml_Dom_html[108], Js_of_ocaml_Dom_html[2]);
+                                audio.src = "/css/music.mp3";
+                                var t72 = Js_of_ocaml_Js[7];
+                                audio.loop = t72;
+                                audio.volume = 0.5;
+                                audio.play();
+                                data[16] = [0, audio];
+                                data[15] = 0;
+                                restartGame(data);
+                                break a;
+                               }
+                               var _v_ = 1 - data[1], _w_ = _v_ ? 1 - data[15] : _v_;
+                               if(_w_) restartGame(data);
+                              }
+                              return Lwt[36];
+                             });
+                   });
+                 caml_call1
+                  (Lwt[11],
+                   function(param){
+                    return caml_call5
+                            (Js_of_ocaml_lwt_Lwt_js_events[82],
+                             0,
+                             0,
+                             0,
+                             data[2],
+                             function(ev, stop){
+                              if(! data[1]) return Lwt[36];
+                              rebuildGrid(data);
+                              var
+                               mousePos = mousePositionOnCanvas(ev, data),
+                               grid = data[10],
+                               my = mousePos[2],
+                               mx = mousePos[1],
+                               match = cellFromPos([0, mx, my], data),
+                               cy = match[2],
+                               cx = match[1],
+                               _o_ = neighborCells([0, cx, cy]),
+                               _p_ = caml_call1(Grid[8], grid),
+                               _q_ = caml_call1(caml_call1(Stdlib_List[23], _p_), _o_),
+                               _r_ = caml_call1(Stdlib_List[14], _q_),
+                               _s_ =
+                                 caml_call1
+                                  (caml_call1
+                                    (Stdlib_List[44],
+                                     function(creet){
+                                      var
+                                       match = creet[2],
+                                       y = match[2],
+                                       x = match[1],
+                                       dx = mx - x,
+                                       dy = my - y,
+                                       rad = creet[6] + 5. * data[5];
+                                      return dx * dx + dy * dy <= rad * rad ? 1 : 0;
+                                     }),
+                                   _r_),
+                               param =
+                                 caml_call1
+                                  (caml_call1
+                                    (Stdlib_List[59],
+                                     function(a, b){return runtime.caml_int_compare(b[1], a[1]);}),
+                                   _s_);
+                              if(param)
+                               var x = param[1], match$0 = [0, x];
+                              else
+                               var match$0 = 0;
+                              if(! match$0) return Lwt[36];
+                              var c = match$0[1];
+                              data[11] = c[1];
+                              var
+                               my$0 = mousePos[2],
+                               mx$0 = mousePos[1],
+                               match$1 = c[2],
+                               cy$0 = match$1[2],
+                               cx$0 = match$1[1];
+                              data[12] = [0, cx$0 - mx$0, cy$0 - my$0];
+                              data[19] = data[19] + 1 | 0;
+                              var tempToken = data[19];
+                              c[3] = generateRandomDirection(0);
+                              caml_call1
+                               (Lwt[11],
+                                function(param){
+                                 var ppx_lwt_0 = caml_call1(Js_of_ocaml_lwt_Lwt_js[1], 3.);
+                                 return caml_call3
+                                         (Lwt[81],
+                                          function(exn){
+                                           try{throw caml_maybe_attach_backtrace(exn, 0);}
+                                           catch(exn){
+                                            var exn$0 = caml_wrap_exception(exn);
+                                            return exn$0;
+                                           }
+                                          },
+                                          ppx_lwt_0,
+                                          function(param){
+                                           var
+                                            _t_ = data[19] === tempToken ? 1 : 0,
+                                            _u_ = _t_ ? data[11] === c[1] ? 1 : 0 : _t_;
+                                           if(_u_) resetGrab(data);
+                                           return Lwt[36];
+                                          });
+                                });
+                              return Lwt[36];
+                             });
+                   });
+                 caml_call1
+                  (Lwt[11],
+                   function(param){
+                    return caml_call5
+                            (Js_of_ocaml_lwt_Lwt_js_events[83],
+                             0,
+                             0,
+                             0,
+                             data[2],
+                             function(param, stop){resetGrab(data); return Lwt[36];});
+                   });
+                 caml_call1
+                  (Lwt[11],
+                   function(param){
+                    return caml_call5
+                            (Js_of_ocaml_lwt_Lwt_js_events[86],
+                             0,
+                             0,
+                             0,
+                             data[2],
+                             function(param, stop){resetGrab(data); return Lwt[36];});
+                   });
+                 caml_call1
+                  (Lwt[11],
+                   function(param){
+                    return caml_call5
+                            (Js_of_ocaml_lwt_Lwt_js_events[85],
+                             0,
+                             0,
+                             0,
+                             data[2],
+                             function(ev, stop){
+                              data[13] = mousePositionOnCanvas(ev, data);
+                              return Lwt[36];
+                             });
+                   });
+                 caml_call1
+                  (Lwt[11],
+                   function(param){
+                    return caml_call1
+                            (Js_of_ocaml_lwt_Lwt_js_events[156],
+                             function(param, stop){
+                              var previousScale = data[5];
+                              data[5] = updateCanvasSize(canvas);
+                              var ratio = data[5] / previousScale;
+                              data[8] = data[8] * ratio;
+                              data[9] = data[8] * 4.;
+                              data[7] = data[7] * ratio;
+                              caml_call2
+                               (Stdlib_List[18],
+                                function(creet){
+                                 creet[4] = data[7];
+                                 var match = creet[2], y = match[2], x = match[1];
+                                 creet[2] = [0, x * ratio, y * ratio];
+                                 creet[6] = creet[6] * ratio;
+                                 return 0;
+                                },
+                                data[4]);
+                              if(data[15])
+                               caml_call1
+                                (Lwt[11],
+                                 function(param){
+                                  return tryLoadingSprites
+                                          (function(sprites){
+                                            return updateFullCanvas(data, sprites[6]);
+                                           },
+                                           data,
+                                           0);
+                                 });
+                              else{
+                               var _m_ = 1 - data[1], _n_ = _m_ ? 1 - data[15] : _m_;
+                               if(_n_)
+                                caml_call1
+                                 (Lwt[11],
+                                  function(param){
+                                   return tryLoadingSprites
+                                           (function(sprites){
+                                             return updateFullCanvas(data, sprites[5]);
+                                            },
+                                            data,
+                                            0);
+                                  });
+                              }
+                              return Lwt[36];
+                             });
+                   });
+                 return Lwt[36];
                 }
-                return Js_of_ocaml_Js[7];
-               }),
-           t105 = Js_of_ocaml_Dom_html[8];
-          t105.onresize = t104;
-          return Js_of_ocaml_Js[7];
-         }
-         var t84 = Js_of_ocaml_Firebug[1];
-         t84.log("Div not found");
-         return Js_of_ocaml_Js[8];
-        }),
-    t107 = Js_of_ocaml_Dom_html[8];
-   t107.onload = t106;
+                var t84 = Js_of_ocaml_Firebug[1];
+                t84.log("Div not found");
+                return Lwt[36];
+               });
+     });
    var H42n42 = [0];
-   runtime.caml_register_global(187, H42n42, "H42n42");
+   runtime.caml_register_global(181, H42n42, "H42n42");
    return;
   }
   (globalThis));

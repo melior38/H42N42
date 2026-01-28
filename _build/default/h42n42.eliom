@@ -585,14 +585,15 @@ let%shared () =
       )
 
     let () = 
-      Dom_html.window##.onload := Dom.handler (fun _ ->
+      Lwt.async (fun () -> 
+        let%lwt _ = Lwt_js_events.onload () in
         Random.self_init ();
         let open Js_of_ocaml in
         let doc = Dom_html.document in
         match Dom_html.getElementById_opt "draw-zone" with
         | None ->
           let () = Firebug.console##log (Js.string "Div not found") in
-          Js._false
+          Lwt.return_unit
         | Some div ->
           let canvas = Dom_html.createCanvas doc in
           canvas##.id := Js.string "canvas";
@@ -638,9 +639,9 @@ let%shared () =
             data
             0
           );
-          
-          Dom_html.window##.onkeydown :=
-            Dom_html.handler (fun ev -> 
+
+          Lwt.async(fun () -> 
+            Lwt_js_events.keydowns Dom_html.window (fun ev _stop ->
               match Js.Optdef.to_option ev##.key with
               | Some key ->
                 let key = Js.to_string key in
@@ -653,28 +654,27 @@ let%shared () =
                     data.isInMenu <- false;
                     restartGame data
                   end;
-                end else if key = "m" || key = "P" then begin
+                end else if key = "m" || key = "M" then begin
                   match data.music with 
                   | Some mus ->
                     mus##.muted := Js.bool (not (Js.to_bool mus##.muted))
                   | None -> ()
                 end;
-                Js._true
-              | None -> ()
-              ;
-              Js._true
-            );
-
-          data.windowCanvas##.onmousedown :=
-            Dom_html.handler (fun ev ->
+                Lwt.return_unit
+              | None -> Lwt.return_unit
+            )
+          );
+    
+          Lwt.async (fun () ->
+            Lwt_js_events.mousedowns data.windowCanvas (fun ev _stop ->
               if not data.isRunning then 
-                Js._true
+                Lwt.return_unit
               else begin
               rebuildGrid data;
               let mousePos = mousePositionOnCanvas ev data in
               match creetAtTopmost data.grid (mousePos) data with
               | None -> 
-                Js._true
+                Lwt.return_unit
               | Some c ->
                   data.grabbedCreetId <- c.id;
                   let mx, my = mousePos in
@@ -690,62 +690,69 @@ let%shared () =
                       end;
                       Lwt.return_unit  
                   );
-                Js._true
+                Lwt.return_unit
               end
-            );
-            
-          data.windowCanvas##.onmouseup :=
-            Dom_html.handler (fun _ ->
-              resetGrab data;
-              Js._true
-            );
-
-          data.windowCanvas##.onmouseout :=
-              Dom_html.handler (fun _ -> 
-                resetGrab data;
-                Js._true  
-              );
-
-          data.windowCanvas##.onmousemove :=
-            Dom_html.handler (fun ev ->
-              data.mousePos <- mousePositionOnCanvas ev data;
-              Js._true  
-            );
-
-          Dom_html.window##.onresize := Dom.handler (fun _ ->
-            let previousScale = data.scale in
-            data.scale <- updateCanvasSize canvas;
-            let ratio = data.scale /. previousScale in
-            data.baseRadius <- data.baseRadius *. (ratio);
-            data.maxRadius <- data.baseRadius *. 4.;
-            data.baseSpeed <- data.baseSpeed *. ratio;
-            List.iter (fun creet -> 
-              creet.speed <- data.baseSpeed;
-              let x,y = creet.pos in
-              creet.pos <- (x *. ratio, y *. ratio);
-              creet.radius <- creet.radius *. ratio;
-            ) data.creets;
-            if data.isInMenu then begin
-              Lwt.async (fun () ->
-                tryLoadingSprites 
-                ~onReady:(fun sprites ->
-                  updateFullCanvas data sprites.menu
-                )
-                data
-                0
-              )
-            end else if not data.isRunning && not data.isInMenu then begin
-              Lwt.async (fun () ->
-                tryLoadingSprites 
-                ~onReady:(fun sprites ->
-                  updateFullCanvas data sprites.gameOver
-                )
-                data
-                0
-              )
-            end;
-            Js._true
+            )
           );
-          Js._true
+    
+          Lwt.async (fun () ->
+            Lwt_js_events.mouseups data.windowCanvas (fun _ _stop ->
+                resetGrab data;
+                Lwt.return_unit
+            )
+          );
+    
+          Lwt.async (fun () ->
+            Lwt_js_events.mouseouts data.windowCanvas (fun _ _stop ->
+                resetGrab data;
+                Lwt.return_unit
+            )
+          );
+    
+          Lwt.async (fun () ->
+            Lwt_js_events.mousemoves data.windowCanvas (fun ev _stop ->
+              data.mousePos <- mousePositionOnCanvas ev data;
+                Lwt.return_unit
+            )
+          );
+    
+          Lwt.async (fun () ->
+              Lwt_js_events.onresizes (fun _ _stop ->
+                let previousScale = data.scale in
+                data.scale <- updateCanvasSize canvas;
+                let ratio = data.scale /. previousScale in
+                data.baseRadius <- data.baseRadius *. (ratio);
+                data.maxRadius <- data.baseRadius *. 4.;
+                data.baseSpeed <- data.baseSpeed *. ratio;
+                List.iter (fun creet -> 
+                  creet.speed <- data.baseSpeed;
+                  let x,y = creet.pos in
+                  creet.pos <- (x *. ratio, y *. ratio);
+                  creet.radius <- creet.radius *. ratio;
+                ) data.creets;
+                if data.isInMenu then begin
+                  Lwt.async (fun () ->
+                    tryLoadingSprites 
+                    ~onReady:(fun sprites ->
+                      updateFullCanvas data sprites.menu
+                    )
+                    data
+                    0
+                  )
+                end else if not data.isRunning && not data.isInMenu then begin
+                  Lwt.async (fun () ->
+                    tryLoadingSprites 
+                    ~onReady:(fun sprites ->
+                      updateFullCanvas data sprites.gameOver
+                    )
+                    data
+                    0
+                  )
+                end;
+                Lwt.return_unit
+              )
+        );
+        
+        Lwt.return_unit
       )
 ]
