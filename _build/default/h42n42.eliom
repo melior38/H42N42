@@ -235,13 +235,29 @@ let%shared () =
           (y -. creet.radius)
           size
           size
-        
-    let handleCircle creet data wWidth wHeight =
+
+    
+    let updateCreetMotion creet data wWidth wHeight =
       probTurn creet;
       moveCircle creet data;
       rebound creet ~w:wWidth ~h:wHeight;
-      fix_pos creet ~w:wWidth ~h:wHeight;
+      fix_pos creet ~w:wWidth ~h:wHeight
+
+    let drawCreet creet data =
       drawCircle creet data
+
+    let rec creetThread (creet : creet) (data : data) =
+      let%lwt () = Lwt_js.sleep data.refresh_rate in
+
+      if not data.isRunning then
+        Lwt.return_unit
+      else begin
+        let wHeight = float_of_int data.windowCanvas##.height in
+        let wWidth = float_of_int data.windowCanvas##.width in
+
+        updateCreetMotion creet data wWidth wHeight;
+        creetThread creet data
+      end
 
     let rebuildGrid data =
       data.grid <- Grid.create 1024;
@@ -362,7 +378,7 @@ let%shared () =
         rebuildGrid data;
         data.canvaCtx##clearRect 0. 0. wWidth wHeight;
         List.iter (fun creet ->
-          handleCircle creet data wWidth wHeight;
+          drawCreet creet data;
         ) data.creets;
 
         drawTimer data.canvaCtx data wWidth;
@@ -543,11 +559,13 @@ let%shared () =
       match creetOpt with
       | None -> ()
       | Some crt ->
-        data.creets <- {crt with id = (List.length data.creets)} :: data.creets
+        let newCreet = {crt with id = (List.length data.creets)} in
+        data.creets <- newCreet :: data.creets;
+        Lwt.async (fun () -> creetThread newCreet data)
 
     let rec reproduceCreet data =
       let prevId = data.gameId in
-      let%lwt () = Lwt_js.sleep 5. in
+      let%lwt () = Lwt_js.sleep 10. in
       if data.gameId = prevId && data.isRunning && (List.length data.creets) < data.creetLimit then begin
         let healthyCreets = List.filter (fun creet -> creet.status = Healthy) data.creets in
         let creetQuantity = List.length healthyCreets in
@@ -572,6 +590,11 @@ let%shared () =
       data.baseSpeed <- 4. *. data.scale;
       generateDataInitalCreets data;
       rebuildGrid data;
+
+      List.iter (fun creet ->
+        Lwt.async (fun () -> creetThread creet data)
+      ) data.creets;
+
       Lwt.async (fun () ->
         reproduceCreet data
       );

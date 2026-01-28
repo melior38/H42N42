@@ -2,3 +2,4 @@ Jan 23 15:12:57: main: Fatal - Findlib package ocsipersist-sqlite-config not fou
 Jan 23 15:14:56: main: Fatal - Findlib package ocsipersist-sqlite-config not found: maybe you forgot <findlib path="..."/>?
 Jan 23 15:15:53: main: Fatal - Findlib package ocsipersist-sqlite-config not found: maybe you forgot <findlib path="..."/>?
 Jan 28 21:39:15: main: Fatal - Unix.Unix_error(Unix.EADDRINUSE, "bind", "")
+Jan 28 21:54:53: main: Fatal - Unix.Unix_error(Unix.EADDRINUSE, "bind", "")
